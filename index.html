@@ -19,11 +19,11 @@
             <a href="./index.html"><img src="./images/logo.png" alt="Лого"></a>
 
             <ul class="list">
-                <li class="header-item"><a href="" class="header-link">Home</a></li>
-                <li class="header-item"><a href="" class="header-link">About us</a></li>
+                <li class="header-item"><a href="./index.html" class="header-link">Home</a></li>
+                <li class="header-item"><a href="#about" class="header-link">About us</a></li>
                 <li class="header-item"><a href="" class="header-link">How it’s made?</a></li>
                 <li class="header-item"><a href="" class="header-link">Our products</a></li>
-                <li class="header-item"><a href="" class="header-link">Contact</a></li>
+                <li class="header-item"><a href="#contact" class="header-link">Contact</a></li>
             </ul>
         </nav>
         <button type="button" class="header-btn">Buy now</button>
@@ -37,11 +37,11 @@
             <h1 class="hero-title">ice cream made with passion</h1>
             <ul class="hero-list">
                 <li class="hero-item">
-                    <span class="hero-">16</span>
+                    <span class="hero-number">16</span>
                     <p class="hero-text-right">cafes</p>
                 </li>
                 <li class="hero-item">
-                    <span class="hero-span">23</span>
+                    <span class="hero-number">23</span>
                     <p class="hero-text-right">food trucks</p>
                 </li>
             </ul>
@@ -87,7 +87,7 @@
 
         <!-- About (how it’s made?) -->
 
-        <section class="about section">
+        <section class="about section" id="about">
             <p class="about-text">tradition and love</p>
             <h2 class="about-title">how it’s made?</h2>
 
@@ -130,23 +130,23 @@
 
         <!-- Gallery -->
 
-        <section>
-            <h2>Gallery</h2>
-            <img src="./images/gallery.png" alt="Gallery photo" width="1280" height="430">
+        <section class="gallery section">
+            <h2 class="gallery-title">Gallery</h2>
+            <img src="./images/gallery.png" class="gallery-img" alt="Gallery photo" width="1280" height="430">
         </section>
 
         <!-- Customer Reviews -->
 
-        <Section>
-            <h2>Customer Reviews</h2>
+        <Section class="customer section">
+            <h2 class="customer">Customer Reviews</h2>
         </Section>
 
-        <!-- Contacts -->
+        <!-- Contact -->
 
-        <section>
-            <h2>Contacts</h2>
-            <ul>
-                <li>
+        <section class="contacts section" id="contact">
+            <h2 class="contacts-title">Contacts</h2>
+            <ul class="contacts-list">
+                <li class="contacts-item">
                     <p>CAFE</p>
                     <h3>Chicago</h3>
                     <p>Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
@@ -171,7 +171,7 @@
                         </li>
                     </ul>
                 </li>
-                <li>
+                <li class="contacts-item">
                     <p>FOOD TRUCK</p>
                     <h3>Los Angeles</h3>
                     <p>Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
@@ -196,7 +196,7 @@
                         </li>
                     </ul>
                 </li>
-                <li>
+                <li class="contacts-item">
                     <p>CAFE</p>
                     <h3>New York</h3>
                     <p>Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
@@ -235,20 +235,23 @@
         </section>
     </main>
 
-    <footer>
-        <p>homemade ice cream made</p>
-        <p>with passion</p>
+    <footer class="footer">
+        <p class="footer-text">homemade ice cream made</p>
+        <p class="footer-text">with passion</p>
 
-        <ul>
-            <li><a href="https://github.com/" target="_blank" aria-label="github">github</a></li>
-            <li><a href="https://web.telegram.org" target="_blank" aria-label="telegram">telegram</a></li>
-            <li><a href="https://www.facebook.com/" target="_blank" aria-label="facebook">facebook</a></li>
+        <ul class="footer-list">
+            <li class="footer-item"><a href="https://github.com/" class="footer-link" target="_blank"
+                    aria-label="github">github</a></li>
+            <li class="footer-item"><a href="https://web.telegram.org" class="footer-link" target="_blank"
+                    aria-label="telegram">telegram</a></li>
+            <li class="footer-item"><a href="https://www.facebook.com/" class="footer-link" target="_blank"
+                    aria-label="facebook">facebook</a></li>
         </ul>
 
-        <p>Feel free to contact</p>
-        <a href="tel:+610383766284">+61(0) 383 766 284</a>
+        <p class="footer-text-tel">Feel free to contact</p>
+        <a href="tel:+610383766284" class="footer-link-tel">+61(0) 383 766 284</a>
 
-        <p>&copy; 2019 - IceCream. All Rights Reserved.</p>
+        <p class="footer-copy">&copy; 2019 - IceCream. All Rights Reserved.</p>
     </footer>
 
 </body>
