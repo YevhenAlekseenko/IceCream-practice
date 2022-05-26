@@ -6,46 +6,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-    <header>
-        <nav>
+    <header class="header">
+        <nav class="navigation">
             <a href="./index.html"><img src="./images/logo.png" alt="Лого"></a>
 
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About us</a></li>
-                <li><a href="">How it’s made?</a></li>
-                <li><a href="">Our products</a></li>
-                <li><a href="">Contact</a></li>
+            <ul class="list">
+                <li class="header-item"><a href="" class="header-link">Home</a></li>
+                <li class="header-item"><a href="" class="header-link">About us</a></li>
+                <li class="header-item"><a href="" class="header-link">How it’s made?</a></li>
+                <li class="header-item"><a href="" class="header-link">Our products</a></li>
+                <li class="header-item"><a href="" class="header-link">Contact</a></li>
             </ul>
         </nav>
-        <button type="button">Buy now</button>
+        <button type="button" class="header-btn">Buy now</button>
     </header>
 
     <main>
 
         <!-- Hero -->
 
-        <section>
-            <h1>ice cream made with passion</h1>
-            <ul>
-                <li>
-                    <span>16</span>
-                    <p>cafes</p>
+        <section class="hero section">
+            <h1 class="hero-title">ice cream made with passion</h1>
+            <ul class="hero-list">
+                <li class="hero-item">
+                    <span class="hero-">16</span>
+                    <p class="hero-text-right">cafes</p>
                 </li>
-                <li>
-                    <span>23</span>
-                    <p>food trucks</p>
+                <li class="hero-item">
+                    <span class="hero-span">23</span>
+                    <p class="hero-text-right">food trucks</p>
                 </li>
             </ul>
-            <ul>
-                <li><a href="">Products</a></li>
-                <li><a href="">How it’s made?</a></li>
+            <ul class="hero-list">
+                <li class="hero-item"><a href="">Products</a></li>
+                <li class="hero-item"><a href="">How it’s made?</a></li>
             </ul>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            <p class="heor-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et
             </p>
 
 
@@ -54,24 +59,27 @@
 
         <!-- Products -->
 
-        <section>
-            <p>100% natural</p>
-            <h2>products</h2>
+        <section class="products section">
+            <p class="products-text">100% natural</p>
+            <h2 class="products-title">products</h2>
 
-            <ul>
-                <li>
-                    <h3>ice cream</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            <ul class="products-list">
+                <li class="products-item">
+                    <h3 class="products-title">ice cream</h3>
+                    <p class="products-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut
                         labore et</p>
                 </li>
-                <li>
-                    <h3>ice coffee</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                <li class="products-item">
+                    <h3 class="products-title">ice coffee</h3>
+                    <p class="products-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut
                         labore et</p>
                 </li>
-                <li>
-                    <h3>milkshakes</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                <li class="products-item">
+                    <h3 class="products-title">milkshakes</h3>
+                    <p class="products-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut
                         labore et</p>
                 </li>
             </ul>
@@ -79,41 +87,43 @@
 
         <!-- About (how it’s made?) -->
 
-        <section>
-            <p>tradition and love</p>
-            <h2>how it’s made?</h2>
+        <section class="about section">
+            <p class="about-text">tradition and love</p>
+            <h2 class="about-title">how it’s made?</h2>
 
-            <img src="./images/about-cow.png" alt="Cow with milk" width="501" height="501">
-            <p>Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget,
+            <img src="./images/about-cow.png" class="about-img" alt="Cow with milk" width="501" height="501">
+            <p class="about-text">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus,
+                faucibus lorem eget,
                 egestas
                 eros.
                 Maecenas eleifend erat at justo fringilla.</p>
-            <p>Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet
+            <p class="about-text">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus
+                orci in imperdiet
                 placerat.
                 Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
                 <br>
                 <br>
                 Aliquam erat volutpat. Aenean accumsan.
             </p>
-            <button>Read more</button>
+            <button type="button" class="about-btn">Read more</button>
         </section>
 
         <!-- Advantages -->
 
-        <section>
-            <h2>Advantages</h2>
-            <ul>
-                <li>
-                    <h3>721</h3>
-                    <p>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+        <section class="advantages section">
+            <h2 class="advantages-title">Advantages</h2>
+            <ul class="advantages-list">
+                <li class="advantages-item">
+                    <h3 class="advantages-number">721</h3>
+                    <p class="advantages-text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
                 </li>
-                <li>
-                    <h3>16kg</h3>
-                    <p>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+                <li class="advantages-item">
+                    <h3 class="advantages-number">16kg</h3>
+                    <p class="advantages-text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
                 </li>
-                <li>
-                    <h3>84</h3>
-                    <p>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+                <li class="advantages-item">
+                    <h3 class="advantages-number">84</h3>
+                    <p class="advantages-text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
                 </li>
             </ul>
         </section>
