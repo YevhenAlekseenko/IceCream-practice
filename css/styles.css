@@ -291,3 +291,122 @@ body{
     
         color: var(--secondary-accent-text);
 }
+
+/* ----------CONTACT---------- */
+
+.contact-title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+
+    color: var(--secondary-text);
+    background-color: rgba(240, 209, 165, 1);
+}
+
+.contact-list-title{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: calc(30 / 16);
+    
+        color: var(--secondary-accent-text);
+}
+
+.contact-list-paragraph{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: calc(29 / 16);
+    
+        color: var(--primary-text);
+}
+
+.contact-list{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: calc(30 / 16);
+
+        color: var(--accent-text);
+}
+
+.contact-list-link{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: calc(29 / 16);
+    
+        color: var(--primary-text);
+}
+
+.contact-btn-accent{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: calc(21 / 16);
+        align-items: center;
+        text-align: center;
+    
+        color: var(--secondary-text);
+        background-color: var(--accent-color);
+}
+
+.contact-btn{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: calc(21 / 16);
+        align-items: center;
+        text-align: center;
+    
+        color: var(--accent-color);
+        background-color: #FFFFFF;
+}
+
+/* ----------FOOTER---------- */
+
+.footer-subtitle{
+    font-family: 'Titan One';
+        font-weight: 400;
+        font-size: 30px;
+        line-height: calc(34 / 30);
+        text-transform: uppercase;
+    
+        color: var(--accent-text);
+}
+
+.footer-text{
+    font-family: 'Titan One';
+        font-weight: 400;
+        font-size: 58px;
+        line-height: calc(66 / 58);
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    
+        color: var(--accent-color);
+}
+
+.footer-contact{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: calc(30 / 16);
+        letter-spacing: 0.02em;
+    
+        color: var(--secondary-accent-text);
+}
+
+.footer-contact-link{
+    font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: calc(30 / 16);    
+        letter-spacing: 0.02em;
+    
+        color: var(--accent-color);
+}
+
+.footer-copy{
+    font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: calc(26 / 14);
+        letter-spacing: 0.02em;
+    text-align: center;
+        color: var(--primary-text);
+}
