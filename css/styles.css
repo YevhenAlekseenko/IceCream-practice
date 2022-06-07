@@ -1,10 +1,10 @@
-:root{
-    --background-color-hero: #FFB8CA;
-    --secondary-text: #FFFFFF;
-    --accent-color: #D41443;
-    --accent-text: #FFA5BA;
-    --secondary-accent-text: #000000;
-    --primary-text: #907E82;
+:root {
+  --background-color-hero: #ffb8ca;
+  --secondary-text: #ffffff;
+  --accent-color: #d41443;
+  --accent-text: #ffa5ba;
+  --secondary-accent-text: #000000;
+  --primary-text: #907e82;
 }
 
 p,
@@ -14,399 +14,428 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0;
+  margin: 0;
 }
 
 ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 img {
-    display: block;
+  display: block;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-body{
-    font-family: "DM Sans", sans-serif;
-    letter-spacing: 0.04em;
+button {
+  cursor: pointer;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  letter-spacing: 0.04em;
 }
 
 .visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.container {
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-right: auto;
+  margin-left: auto;
+  border: 2px solid red;
 }
 
 /* ----------HEADER---------- */
 
-.header{
-    background-color: var(--background-color-hero);
+.header {
+  padding-top: 37px;
+  background-color: var(--background-color-hero);
 }
 
-.header-link{
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.31;
-        color: var(--secondary-text);
+.header-link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  color: var(--secondary-text);
 }
 
-.header-link:hover, .header-link:focus{
-    color: var(--accent-color);
+.header-link:hover,
+.header-link:focus {
+  color: var(--accent-color);
 }
 
-.header-btn{
-    font-weight: 700;
-        font-size: 16px;
-        line-height: 1.31;
-    
-        color: var(--accent-color);
+.header-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+
+  color: var(--accent-color);
 }
 
 /* ----------HERO---------- */
 
-.hero{
-    background-color: var(--background-color-hero);
+.hero {
+  padding-bottom: 60px;
+  background-color: var(--background-color-hero);
 }
 
-.hero-title{
-    font-family: 'Titan One';
-        font-weight: 400;
-        font-size: 38px;
-        line-height: 1.16;
-        text-transform: uppercase;
-    
-        color: var(--secondary-text);
+.hero-title {
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 1.16;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+
+  color: var(--secondary-text);
 }
 
-.hero-span{
-    font-family: 'Titan One';
-        font-weight: 400;
-        font-size: 58px;
-        line-height: 0.9;
-        text-transform: uppercase;
-    
-        color: var(--accent-color);
+.hero-span {
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 0.9;
+  text-transform: uppercase;
+
+  color: var(--accent-color);
 }
 
-.hero-number{
-        font-family: 'Titan One';
-        font-weight: 400;
-        font-size: 46px;
-        line-height: 53px;
-        text-transform: uppercase;
-    
-        color: #D41443;
+.hero-number {
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 53px;
+  text-transform: uppercase;
+
+  color: #d41443;
 }
 
-.hero-text-right{
-        font-family: 'DM Sans';
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.28;
-    
-        color: var(--secondary-text);
+.hero-text-right {
+  font-family: 'DM Sans';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+
+  color: var(--secondary-text);
 }
 
-.hero-link-accent{
-    font-family: 'DM Sans';
-    font-size: 14px;
-    line-height: 1.28;
-    align-items: center;
-    text-align: center;
+.hero-link-accent {
+  font-family: 'DM Sans';
+  font-size: 14px;
+  line-height: 1.28;
+  align-items: center;
+  text-align: center;
 
-    color: var(--secondary-text);
-    background-color: var(--accent-color);
+  color: var(--secondary-text);
+  background-color: var(--accent-color);
 }
 
-.hero-link{
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.28;
-        align-items: center;
-        text-align: center;
-    
-        color: #D41443;
-        background-color: var(--secondary-text);
+.hero-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+  align-items: center;
+  text-align: center;
+
+  color: #d41443;
+  background-color: var(--secondary-text);
 }
 
-.hero-text{
-        font-size: 14px;
-        line-height: 1.43;
-    
-        color: #FFFFFF;
+.hero-text {
+  font-size: 14px;
+  line-height: 1.43;
+
+  color: #ffffff;
 }
 
 /* ----------PRODUCTS---------- */
 
-.products-pre-text{
-    font-family: 'Titan One';
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 1.13;
-    text-align: center;
-    text-transform: uppercase;
-
-    color: var(--accent-text);
+.products {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.products-title{
-        font-family: 'Titan One';
-        font-weight: 400;
-        font-size: 58px;
-        line-height: 1.14;
-        text-align: center;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-    
-        color: var(--accent-color);
+.products-pre-text {
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.13;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+
+  color: var(--accent-text);
 }
 
-.products-item-pink{
-    background-color: #FFB8CA;
+.products-title {
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--accent-color);
 }
 
-.products-item-title{
-    font-family: 'Titan One';
-        font-weight: 400;
-        font-size: 30px;
-        line-height: calc(34 /30);
-        text-align: center;
-        text-transform: uppercase;
-    
-        color: var(--secondary-text);
+.products-item-pink {
+  background-color: #ffb8ca;
 }
 
-.products-item-coffee{
-    background-color: #F0D1A5;
+.products-item-title {
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 30px;
+  line-height: calc(34 / 30);
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--secondary-text);
 }
 
-.products-item-green{
-    background-color: #C2E297;
+.products-item-coffee {
+  background-color: #f0d1a5;
+}
+
+.products-item-green {
+  background-color: #c2e297;
 }
 
 /* ----------ABOUT---------- */
 
-.about-pre-text{
-    font-family: 'Titan One';
-    font-weight: 400;
-    font-size: 30px;
-    line-height: calc(34 / 30);
-    text-align: center;
-    text-transform: uppercase;
-
-    color: var(--accent-text);
+.about {
+  padding-top: 60px;
+  padding-bottom: 39px;
 }
 
-.about-title{
-        font-family: 'Titan One';
-        font-weight: 400;
-        font-size: 58px;
-        line-height: calc(66 / 58);
-        text-align: center;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-    
-        color: var(--accent-color);
+.about-pre-text {
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 30px;
+  line-height: calc(34 / 30);
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+
+  color: var(--accent-text);
 }
 
-.about-text{
-        font-weight: 500;
-        font-size: 16px;
-        line-height: calc(28 / 16);    
-    
-        color: var(--secondary-accent-text);
+.about-title {
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 58px;
+  line-height: calc(66 / 58);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--accent-color);
 }
 
-.about-after-text{
-        font-weight: 500;
-        font-size: 14px;
-        line-height: calc(27 / 14);
+.about-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(28 / 16);
+  margin-bottom: 32px;
 
-        color: var(--secondary-text);
+  color: var(--secondary-accent-text);
 }
 
-.about-btn{
-    font-family: inherit;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: calc(21 / 16);
-        align-items: center;
-        text-align: center;
-    
-        color: var(--accent-color);
-        background-color: var(--secondary-text);
+.about-after-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(27 / 14);
+  margin-bottom: 40px;
+
+  color: var(--secondary-text);
+}
+
+.about-btn {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(21 / 16);
+  align-items: center;
+  text-align: center;
+
+  color: var(--accent-color);
+  background-color: var(--secondary-text);
 }
 
 /* ----------ADVANTAGES---------- */
 
-.advantages-number{
-    font-family: 'Titan One';
-        font-weight: 400;
-        font-size: 58px;
-        line-height: 66px;
-    
-        color: var(--accent-color);
+.advantages-number {
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 66px;
+
+  color: var(--accent-color);
 }
 
-.advantages-text{
-        font-weight: 700;
-        font-size: 16px;
-        line-height: calc(28 / 16);    
-        letter-spacing: 0.02em;
-    
-        color: var(--secondary-accent-text);
+.advantages-text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(28 / 16);
+  letter-spacing: 0.02em;
+
+  color: var(--secondary-accent-text);
 }
 
 /* ----------REVIEWS---------- */
 
-.reviews-text{
-        font-weight: 500;
-        font-size: 16px;
-        line-height: calc(30 / 16);
-        text-align: center;
-    
-        color: var(--secondary-accent-text);
+.reviews-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  text-align: center;
+
+  color: var(--secondary-accent-text);
 }
 
-.reviews-client{
-        font-weight: 500;
-        font-size: 20px;
-        line-height: calc(37 / 20);
-        text-align: center;
-    
-        color: var(--secondary-accent-text);
+.reviews-client {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(37 / 20);
+  text-align: center;
+
+  color: var(--secondary-accent-text);
 }
 
 /* ----------CONTACT---------- */
 
-.contact-title{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: calc(30 / 16);
+.contact-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(30 / 16);
 
-    color: var(--secondary-text);
-    background-color: rgba(240, 209, 165, 1);
+  color: var(--secondary-text);
+  background-color: rgba(240, 209, 165, 1);
 }
 
-.contact-list-title{
-        font-weight: 500;
-        font-size: 16px;
-        line-height: calc(30 / 16);
-    
-        color: var(--secondary-accent-text);
+.contact-list-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+
+  color: var(--secondary-accent-text);
 }
 
-.contact-list-paragraph{
-        font-weight: 500;
-        font-size: 16px;
-        line-height: calc(29 / 16);
-    
-        color: var(--primary-text);
+.contact-list-paragraph {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(29 / 16);
+
+  color: var(--primary-text);
 }
 
-.contact-list{
-        font-weight: 500;
-        font-size: 16px;
-        line-height: calc(30 / 16);
+.contact-list {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(30 / 16);
 
-        color: var(--accent-text);
+  color: var(--accent-text);
 }
 
-.contact-list-link{
-        font-weight: 500;
-        font-size: 16px;
-        line-height: calc(29 / 16);
-    
-        color: var(--primary-text);
+.contact-list-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(29 / 16);
+
+  color: var(--primary-text);
 }
 
-.contact-btn-accent{
-        font-weight: 700;
-        font-size: 16px;
-        line-height: calc(21 / 16);
-        align-items: center;
-        text-align: center;
-    
-        color: var(--secondary-text);
-        background-color: var(--accent-color);
+.contact-btn-accent {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(21 / 16);
+  align-items: center;
+  text-align: center;
+
+  color: var(--secondary-text);
+  background-color: var(--accent-color);
 }
 
-.contact-btn{
-        font-weight: 700;
-        font-size: 16px;
-        line-height: calc(21 / 16);
-        align-items: center;
-        text-align: center;
-    
-        color: var(--accent-color);
-        background-color: #FFFFFF;
+.contact-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(21 / 16);
+  align-items: center;
+  text-align: center;
+
+  color: var(--accent-color);
+  background-color: #ffffff;
 }
 
 /* ----------FOOTER---------- */
 
-.footer-subtitle{
-    font-family: 'Titan One';
-        font-weight: 400;
-        font-size: 30px;
-        line-height: calc(34 / 30);
-        text-transform: uppercase;
-    
-        color: var(--accent-text);
+.footer-subtitle {
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 30px;
+  line-height: calc(34 / 30);
+  text-transform: uppercase;
+
+  color: var(--accent-text);
 }
 
-.footer-text{
-    font-family: 'Titan One';
-        font-weight: 400;
-        font-size: 58px;
-        line-height: calc(66 / 58);
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-    
-        color: var(--accent-color);
+.footer-text {
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 58px;
+  line-height: calc(66 / 58);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--accent-color);
 }
 
-.footer-contact{
-        font-weight: 700;
-        font-size: 16px;
-        line-height: calc(30 / 16);
-        letter-spacing: 0.02em;
-    
-        color: var(--secondary-accent-text);
+.footer-contact {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.02em;
+
+  color: var(--secondary-accent-text);
 }
 
-.footer-contact-link{
-    font-family: 'DM Sans';
+.footer-contact-link {
+  /* font-family: 'DM Sans';
         font-style: normal;
         font-weight: 700;
         font-size: 16px;
         line-height: calc(30 / 16);    
-        letter-spacing: 0.02em;
-    
-        color: var(--accent-color);
+        letter-spacing: 0.02em; */
+
+  color: var(--accent-color);
 }
 
-.footer-copy{
-    font-family: 'DM Sans';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: calc(26 / 14);
-        letter-spacing: 0.02em;
-    text-align: center;
-        color: var(--primary-text);
+.footer-copy {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(26 / 14);
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--primary-text);
 }

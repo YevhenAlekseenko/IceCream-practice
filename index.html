@@ -9,111 +9,120 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
     <header class="header" id="home">
-        <nav class="navigation">
-            <a href="./index.html"><img src="./images/logo.png" alt="Лого"></a>
+        <div class="container">
+            <nav class="navigation">
+                <a href="./index.html"><img src="./images/logo.png" alt="Лого"></a>
 
-            <ul class="list">
-                <li class="header-item"><a href="#home" class="header-link">Home</a></li>
-                <li class="header-item"><a href="#about" class="header-link">About us</a></li>
-                <li class="header-item"><a href="#how-it’s-made" class="header-link">How it’s made?</a></li>
-                <li class="header-item"><a href="#products" class="header-link">Our products</a></li>
-                <li class="header-item"><a href="#contact" class="header-link">Contact</a></li>
-            </ul>
-        </nav>
-        <button type="button" class="header-btn">Buy now</button>
+                <ul class="list">
+                    <li class="header-item"><a href="#home" class="header-link">Home</a></li>
+                    <li class="header-item"><a href="#about" class="header-link">About us</a></li>
+                    <li class="header-item"><a href="#how-it’s-made" class="header-link">How it’s made?</a></li>
+                    <li class="header-item"><a href="#products" class="header-link">Our products</a></li>
+                    <li class="header-item"><a href="#contact" class="header-link">Contact</a></li>
+                </ul>
+            </nav>
+            <button type="button" class="header-btn">Buy now</button>
+        </div>
     </header>
-
     <main>
 
         <!-- Hero -->
 
         <section class="hero section">
-            <h1 class="hero-title">ice cream <br> made with <br> <span class="hero-span">passion</span></h1>
-            <ul class="hero-list">
-                <li class="hero-item">
-                    <span class="hero-number">16</span>
-                    <p class="hero-text-right">cafes</p>
-                </li>
-                <li class="hero-item">
-                    <span class="hero-number">23</span>
-                    <p class="hero-text-right">food trucks</p>
-                </li>
-            </ul>
-            <ul class="hero-list">
-                <li class="hero-item"><a class="hero-link-accent" href="">Products</a></li>
-                <li class="hero-item"><a class="hero-link" href="">How it’s made?</a></li>
-            </ul>
-            <p class="hero-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et
-            </p>
-
-
-
+            <div class="container">
+                <h1 class="hero-title">ice cream <br> made with <br> <span class="hero-span">passion</span></h1>
+                <ul class="hero-list">
+                    <li class="hero-item">
+                        <span class="hero-number">16</span>
+                        <p class="hero-text-right">cafes</p>
+                    </li>
+                    <li class="hero-item">
+                        <span class="hero-number">23</span>
+                        <p class="hero-text-right">food trucks</p>
+                    </li>
+                </ul>
+                <ul class="hero-list">
+                    <li class="hero-item"><a class="hero-link-accent" href="">Products</a></li>
+                    <li class="hero-item"><a class="hero-link" href="">How it’s made?</a></li>
+                </ul>
+                <img src="./images/hero-milk.png" width="213" height="216" alt="Ьilk in a carafe">
+                <p class="hero-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et
+                </p>
+                <img src="./images/hero-ice-cream.png" width="236" height="557" alt="IceCream">
+                <img src="./images/hero-right.png" width="304" height="241" alt="Girl eating ice cream">
+            </div>
         </section>
 
         <!-- Products -->
 
         <section class="products section" id="products">
-            <p class="products-pre-text">100% natural</p>
-            <h2 class="products-title">products</h2>
+            <div class="container">
+                <p class="products-pre-text">100% natural</p>
+                <h2 class="products-title">products</h2>
 
-            <ul class="products-list">
-                <li class="products-item-pink">
-                    <h3 class="products-item-title">ice cream</h3>
-                    <p class="products-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut
-                        labore et</p>
-                </li>
-                <li class="products-item-coffee">
-                    <h3 class="products-item-title">ice coffee</h3>
-                    <p class="products-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut
-                        labore et</p>
-                </li>
-                <li class="products-item-green">
-                    <h3 class="products-item-title">milkshakes</h3>
-                    <p class="products-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod
-                        tempor incididunt ut
-                        labore et</p>
-                </li>
-            </ul>
+                <ul class="products-list">
+                    <li class="products-item-pink">
+                        <h3 class="products-item-title">ice cream</h3>
+                        <p class="products-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut
+                            labore et</p>
+                    </li>
+                    <li class="products-item-coffee">
+                        <h3 class="products-item-title">ice coffee</h3>
+                        <p class="products-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut
+                            labore et</p>
+                    </li>
+                    <li class="products-item-green">
+                        <h3 class="products-item-title">milkshakes</h3>
+                        <p class="products-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod
+                            tempor incididunt ut
+                            labore et</p>
+                    </li>
+                </ul>
+            </div>
         </section>
 
         <!-- About (how it’s made?) -->
 
         <section class="about section" id="how-it’s-made">
-            <p class="about-pre-text">tradition and love</p>
-            <h2 class="about-title">how it’s made?</h2>
+            <div class="container">
+                <p class="about-pre-text">tradition and love</p>
+                <h2 class="about-title">how it’s made?</h2>
 
-            <img src="./images/about-cow.png" class="about-img" alt="Cow with milk" width="501" height="501">
-            <p class="about-text">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus,
-                faucibus lorem eget,
-                egestas
-                eros.
-                Maecenas eleifend erat at justo fringilla.</p>
-            <p class="about-after-text">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris
-                rhoncus
-                orci in imperdiet
-                placerat.
-                Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
-                <br>
-                <br>
-                Aliquam erat volutpat. Aenean accumsan.
-            </p>
-            <button type="button" class="about-btn">Read more</button>
+                <img src="./images/about-cow.png" class="about-img" alt="Cow with milk" width="501" height="501">
+                <p class="about-text">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus,
+                    faucibus lorem eget,
+                    egestas
+                    eros.
+                    Maecenas eleifend erat at justo fringilla.</p>
+                <p class="about-after-text">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
+                    Mauris
+                    rhoncus
+                    orci in imperdiet
+                    placerat.
+                    Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+                    tincidunt.
+                    <br>
+                    <br>
+                    Aliquam erat volutpat. Aenean accumsan.
+                </p>
+                <button type="button" class="about-btn">Read more</button>
+            </div>
         </section>
 
         <!-- Advantages -->
