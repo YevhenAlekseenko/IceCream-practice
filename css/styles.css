@@ -61,6 +61,7 @@ body {
   width: 100%;
   padding-left: 16px;
   padding-right: 16px;
+  margin-bottom: 60px;
   margin-right: auto;
   margin-left: auto;
   border: 2px solid red;
@@ -71,10 +72,13 @@ body {
   justify-content: center;
   align-items: center;
   border: transparent;
-  border-radius: 20px;
+  border-radius: 22px;
   text-align: center;
 
   text-decoration: inherit;
+
+  min-width: 107px;
+  height: 44px;
 }
 
 /* ----------HEADER---------- */
@@ -322,6 +326,7 @@ body {
 .about {
   padding-top: 60px;
   padding-bottom: 39px;
+  background-color: #fff5f6;
 }
 
 .about-pre-text {
@@ -348,6 +353,18 @@ body {
   color: var(--accent-color);
 }
 
+.about-box {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.about-content-box {
+  margin-left: 139px;
+
+  max-width: 463px;
+}
+
 .about-text {
   font-weight: 500;
   font-size: 16px;
@@ -363,10 +380,12 @@ body {
   line-height: calc(27 / 14);
   margin-bottom: 40px;
 
-  color: var(--secondary-text);
+  color: var(--primary-text);
 }
 
 .about-btn {
+  min-width: 176px;
+  height: 44px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -378,7 +397,18 @@ body {
   background-color: var(--secondary-text);
 }
 
+.about-btn:hover,
+.about-btn:focus {
+  background-color: #ecebeb;
+}
+
 /* ----------ADVANTAGES---------- */
+
+.advantages-list {
+  /* position: absolute; */
+  display: flex;
+  padding-bottom: 120px;
+}
 
 .advantages-number {
   font-family: 'Titan One';
@@ -400,7 +430,13 @@ body {
 
 /* ----------REVIEWS---------- */
 
+.reviews-img {
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
 .reviews-text {
+  margin-bottom: 36px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: calc(30 / 16);
@@ -446,11 +482,24 @@ body {
 }
 
 .contact-list {
+  display: flex;
+  margin-bottom: 60px;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(30 / 16);
 
   color: var(--accent-text);
+}
+
+.contacts-item {
+  padding: 40px;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  background-color: #ffffff;
+}
+
+.contacts-item + .contacts-item {
+  margin-left: 32px;
 }
 
 .contact-list-link {
@@ -461,7 +510,17 @@ body {
   color: var(--primary-text);
 }
 
-.contact-btn-accent {
+.contacts-list-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts-btn-accent {
+  margin-right: 15px;
+
+  min-width: 198px;
+  height: 44px;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(21 / 16);
@@ -472,7 +531,12 @@ body {
   background-color: var(--accent-color);
 }
 
-.contact-btn {
+.contacts-btn-accent:hover,
+.contacts-btn-accent:focus {
+  background-color: #c7133e;
+}
+
+.contacts-btn {
   font-weight: 700;
   font-size: 16px;
   line-height: calc(21 / 16);
@@ -483,7 +547,20 @@ body {
   background-color: #ffffff;
 }
 
+.contacts-btn:hover,
+.contacts-btn:focus {
+  background-color: #ecebeb;
+}
+
 /* ----------FOOTER---------- */
+
+.footer {
+  background-color: #fff5f6;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
 
 .footer-subtitle {
   font-family: 'Titan One';
@@ -506,7 +583,21 @@ body {
   color: var(--accent-color);
 }
 
-.footer-contact {
+.footer-list {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.footer-item + .footer-item {
+  margin-left: 25px;
+}
+
+.footer-contacts-text {
+  display: inline-flex;
+  align-items: center;
+}
+
+.footer-contacts {
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);

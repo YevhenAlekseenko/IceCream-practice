@@ -103,22 +103,27 @@
             <div class="container">
                 <p class="about-pre-text">tradition and love</p>
                 <h2 class="about-title">how it’s made?</h2>
-
-                <img src="./images/about-cow.png" class="about-img" alt="Cow with milk" width="501" height="501">
-                <p class="about-text">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus,
-                    faucibus lorem eget,
-                    egestas
-                    eros.
-                    Maecenas eleifend erat at justo fringilla.</p>
-                <p class="about-after-text">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
-                    Mauris rhoncus orci in imperdiet placerat.
-                    Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
-                    tincidunt.
-                    <br>
-                    <br>
-                    Aliquam erat volutpat. Aenean accumsan.
-                </p>
-                <button type="button" class="about-btn">Read more</button>
+                <div class="about-box">
+                    <img src="./images/about-cow.png" class="about-img" alt="Cow with milk" width="501" height="501">
+                    <div class="about-content-box">
+                        <p class="about-text">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
+                            cursus,
+                            faucibus lorem eget,
+                            egestas
+                            eros.
+                            Maecenas eleifend erat at justo fringilla.</p>
+                        <p class="about-after-text">Curabitur lacinia enim at ex blandit, vel pellentesque odio
+                            elementum.
+                            Mauris rhoncus orci in imperdiet placerat.
+                            Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+                            tincidunt.
+                            <br>
+                            <br>
+                            Aliquam erat volutpat. Aenean accumsan.
+                        </p>
+                        <button type="button" class="btn about-btn">Read more</button>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -158,7 +163,7 @@
         <Section class="reviews section" id="about">
             <div class="container">
                 <h2 class="reviews visually-hidden">Customer Reviews</h2>
-                <img src="./images/testimonials1.jpg" alt="Reviews" width="55" height="55">
+                <img class="reviews-img" src="./images/testimonials1.jpg" alt="Reviews" width="55" height="55">
                 <p class="reviews-text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
                     hendrerit nulla quam nunc, accumsan
                     congue. Lorem ipsum primis in nibh vel risus.</p>
@@ -172,7 +177,7 @@
             <div class="container">
                 <h2 class="contact-title visually-hidden">Contacts</h2>
                 <ul class="contact-list">
-                    <li class="contact-item">
+                    <li class="contacts-item">
                         <span class="contact-title">CAFE</span>
                         <h3 class="contact-list-title">Chicago</h3>
                         <p class="contact-list-paragraph">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
@@ -249,14 +254,14 @@
                     </li>
                 </ul>
                 <address>
-                    <ul>
+                    <ul class="contacts-list-btn">
                         <li>
-                            <a href="https://g.page/LESIceCreamFactory?share" class="contact-btn-accent"
+                            <a href="https://g.page/LESIceCreamFactory?share" class="contacts-btn-accent btn"
                                 target="_blank">Our
                                 Locations</a>
                         </li>
                         <li>
-                            <a href="" class="contact-btn">Franchise</a>
+                            <a href="" class="contacts-btn btn">Franchise</a>
                         </li>
                     </ul>
                 </address>
@@ -265,22 +270,27 @@
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <p class="footer-subtitle">homemade ice cream made</p>
-            <span class="footer-text">with passion</span>
-
-            <ul class="footer-list">
-                <li class="footer-item"><a href="https://github.com/" class="footer-link" target="_blank"
-                        aria-label="github">github</a></li>
-                <li class="footer-item"><a href="https://web.telegram.org" class="footer-link" target="_blank"
-                        aria-label="telegram">telegram</a></li>
-                <li class="footer-item"><a href="https://www.facebook.com/" class="footer-link" target="_blank"
-                        aria-label="facebook">facebook</a></li>
-            </ul>
-
-            <p class="footer-contact">Feel free to contact</p>
-            <a href="tel:+610383766284" class="footer-contact-link footer-contact">+61(0) 383 766 284</a>
-
+        <div class="container footer-container">
+            <div class="footer-content">
+                <p class="footer-subtitle">homemade ice cream made</p>
+                <span class="footer-text">with passion</span>
+            </div>
+            <div class="footer-social">
+                <ul class="footer-list">
+                    <li class="footer-item"><a href="https://github.com/" class="footer-link" target="_blank"
+                            aria-label="github">github</a></li>
+                    <li class="footer-item"><a href="https://web.telegram.org" class="footer-link" target="_blank"
+                            aria-label="telegram">telegram</a></li>
+                    <li class="footer-item"><a href="https://www.facebook.com/" class="footer-link" target="_blank"
+                            aria-label="facebook">facebook</a></li>
+                </ul>
+                <div class="footer-contacts-text">
+                    <p class="footer-contacts">Feel free to contact</p>
+                    <a href="tel:+610383766284" class="footer-contact-link footer-contact">+61(0) 383 766 284</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copy">
             <p class="footer-copy">&copy; 2019 - IceCream. All Rights Reserved.</p>
         </div>
     </footer>
