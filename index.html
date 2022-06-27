@@ -32,7 +32,7 @@
                     <li class="header-item"><a href="#products" class="header-link">Our products</a></li>
                     <li class="header-item"><a href="#contact" class="header-link">Contact</a></li>
                 </ul>
-                <button type="button" class="header-btn">Buy now
+                <button type="button" class="header-btn" aria-label="Buy now">Buy now
                     <svg class="icons-vector" width="8" height="16">
                         <use href="./images/icons.svg#icon-vector"></use>
                     </svg>
@@ -46,7 +46,7 @@
         <!-- Hero -->
 
         <section class="hero section">
-            <div class="container">
+            <div class="container hero-container">
                 <h1 class="hero-title">ice cream <br> made with <br> <span class="hero-span">passion</span></h1>
                 <ul class="hero-list">
                     <li class="hero-item">
@@ -62,12 +62,19 @@
                     <li class="hero-item"><a class="btn hero-btn-accent" href="">Products</a></li>
                     <li class="hero-item"><a class="btn hero-btn" href="">How it’s made?</a></li>
                 </ul>
-                <img src="./images/hero-milk.png" width="213" height="216" alt="Ьilk in a carafe">
-                <p class="hero-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et
-                </p>
-                <img src="./images/hero-ice-cream.png" width="236" height="557" alt="IceCream">
-                <img src="./images/hero-right.png" width="304" height="241" alt="Girl eating ice cream">
+                <img class="hero-milk" src="./images/hero-milk.png" width="213" height="216" alt="Ьilk in a carafe">
+                <div class="hero-text-wrap">
+                    <p class="hero-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et
+                    </p>
+                    <details class="hero-details">
+                        <summary class="hero-summary"></summary>
+                        <p class="hero-summary-text">Very Tasty</p>
+                    </details>
+                </div>
+                <img class="hero-ice" src="./images/hero-ice-cream.png" width="236" height="557" alt="IceCream">
+                <img class="hero-right" src="./images/hero-right.png" width="304" height="241"
+                    alt="Girl eating ice cream">
             </div>
         </section>
 
@@ -83,20 +90,38 @@
                         <h3 class="products-item-title">ice cream</h3>
                         <p class="products-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                             tempor incididunt ut
-                            labore et</p>
+                            labore et
+                        </p>
+                        <details class="products-details">
+                            <summary class="products-summary"></summary>
+                            <p class="products-summary-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et</p>
+                        </details>
                     </li>
                     <li class="products-item products-item-coffee">
                         <h3 class="products-item-title">ice coffee</h3>
                         <p class="products-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                             tempor incididunt ut
-                            labore et</p>
+                            labore et
+                        </p>
+                        <details class="products-details">
+                            <summary class="products-summary"></summary>
+                            <p class="products-summary-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et</p>
+                        </details>
                     </li>
                     <li class=" products-item products-item-green">
                         <h3 class="products-item-title">milkshakes</h3>
                         <p class="products-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                             eiusmod
                             tempor incididunt ut
-                            labore et</p>
+                            labore et
+                        </p>
+                        <details class="products-details">
+                            <summary class="products-summary"></summary>
+                            <p class="products-summary-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et</p>
+                        </details>
                     </li>
                 </ul>
             </div>
@@ -126,7 +151,7 @@
                             <br>
                             Aliquam erat volutpat. Aenean accumsan.
                         </p>
-                        <button type="button" class="btn about-btn">Read more
+                        <button type="button" class="btn about-btn" aria-label="Read more">Read more
                             <svg class="icons-vector" width="8" height="16">
                                 <use href="./images/icons.svg#icon-vector"></use>
                             </svg>
@@ -143,15 +168,15 @@
                 <h2 class="advantages-title visually-hidden">Advantages</h2>
                 <ul class="advantages-list">
                     <li class="advantages-item">
-                        <h3 class="advantages-number">721</h3>
+                        <h3 class="advantages-number advantages-icon1">721</h3>
                         <p class="advantages-text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
                     </li>
                     <li class="advantages-item">
-                        <h3 class="advantages-number">16kg</h3>
+                        <h3 class="advantages-number advantages-icon2">16kg</h3>
                         <p class="advantages-text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
                     </li>
                     <li class="advantages-item">
-                        <h3 class="advantages-number">84</h3>
+                        <h3 class="advantages-number advantages-icon3">84</h3>
                         <p class="advantages-text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
                     </li>
                 </ul>
@@ -266,14 +291,13 @@
                     <ul class="contacts-list-btn">
                         <li>
                             <a href="https://g.page/LESIceCreamFactory?share" class="contacts-btn-accent btn"
-                                target="_blank">Our
-                                Locations
+                                target="_blank" aria-label="Our Locations">Our Locations
                                 <svg class="icons-vector" width="8" height="16">
                                     <use href="./images/icons.svg#icon-vector-1"></use>
                                 </svg></a>
                         </li>
                         <li>
-                            <a href="" class="contacts-btn btn">Franchise
+                            <a href="" class="contacts-btn btn" aria-label="Franchise">Franchise
                                 <svg class="icons-vector" width="8" height="16">
                                     <use href="./images/icons.svg#icon-vector"></use>
                                 </svg></a>
@@ -314,7 +338,7 @@
                 </ul>
                 <div class="footer-contacts-text">
                     <p class="footer-contacts">Feel free to contact</p>
-                    <a href="tel:+610383766284" class="footer-contact-link footer-contact">+61(0) 383 766 284</a>
+                    <a href="tel:+610383766284" class="footer-contact-link footer-contact"> +61(0) 383 766 284</a>
                 </div>
             </div>
         </div>

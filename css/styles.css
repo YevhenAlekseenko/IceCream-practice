@@ -58,13 +58,13 @@ body {
 }
 
 .container {
-  width: 100%;
+  width: 1280px;
   padding-left: 16px;
   padding-right: 16px;
   margin-bottom: 60px;
   margin-right: auto;
   margin-left: auto;
-  /* border: 2px solid red; */
+  border: 2px solid red;
 }
 
 .btn {
@@ -88,9 +88,6 @@ body {
   padding-bottom: 60px;
 
   background-color: var(--background-color-hero);
-}
-
-.heder-container {
 }
 
 .navigation {
@@ -156,6 +153,10 @@ body {
 .hero {
   padding-bottom: 60px;
   background-color: var(--background-color-hero);
+}
+
+.hero-container {
+  position: relative;
 }
 
 .hero-title {
@@ -224,6 +225,8 @@ body {
 }
 
 .hero-btn {
+  margin-bottom: 108px;
+
   min-width: 137px;
   height: 40px;
   font-weight: 400;
@@ -241,11 +244,60 @@ body {
   background-color: #ecebeb;
 }
 
+.hero-text-wrap {
+  margin-left: 213px;
+}
+
 .hero-text {
+  width: 200px;
+  margin-bottom: 20px;
   font-size: 14px;
   line-height: 1.43;
 
   color: #ffffff;
+}
+
+.hero-details {
+}
+
+.hero-summary {
+}
+
+.hero-summary,
+.products-summary {
+  content: '';
+  width: 26px;
+  height: 26px;
+  background-image: url(../images/arrow-right.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50%;
+  display: block;
+}
+
+.hero-summary-text {
+  font-size: 14px;
+  line-height: 1.43;
+
+  color: #ffffff;
+}
+
+.hero-milk {
+  position: absolute;
+  left: 16px;
+  bottom: 60px;
+}
+
+.hero-right {
+  position: absolute;
+  bottom: 0;
+  right: 16px;
+}
+
+.hero-ice {
+  position: absolute;
+  right: 480px;
+  bottom: 0;
 }
 
 /* ----------PRODUCTS---------- */
@@ -319,6 +371,16 @@ body {
   text-align: center;
 
   color: #ffffff;
+}
+
+.products-details {
+  position: relative;
+  left: 50%;
+}
+
+.products-summary {
+  width: 40px;
+  height: 40px;
 }
 
 .products-item-coffee {
@@ -413,9 +475,12 @@ body {
 /* ----------ADVANTAGES---------- */
 
 .advantages-list {
-  /* position: absolute; */
   display: flex;
   padding-bottom: 120px;
+}
+
+.advantages-item {
+  position: relative;
 }
 
 .advantages-number {
@@ -425,6 +490,48 @@ body {
   line-height: 66px;
 
   color: var(--accent-color);
+}
+
+.advantages-icon1::before {
+  content: '';
+  width: 33px;
+  height: 50px;
+  background-image: url(../images/advantages-icon1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  position: absolute;
+  top: -40px;
+  left: 0;
+  transform: translateY(-100%);
+}
+
+.advantages-icon2::before {
+  content: '';
+  width: 50px;
+  height: 50px;
+  background-image: url(../images/advantages-icon2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  position: absolute;
+  top: -40px;
+  left: 0;
+  transform: translateY(-100%);
+}
+
+.advantages-icon3::before {
+  content: '';
+  width: 44px;
+  height: 50px;
+  background-image: url(../images/advantages-icon3.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  position: absolute;
+  top: -40px;
+  left: 0;
+  transform: translateY(-100%);
 }
 
 .advantages-text {
@@ -633,12 +740,12 @@ body {
 }
 
 .footer-contact-link {
-  /* font-family: 'DM Sans';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: calc(30 / 16);    
-        letter-spacing: 0.02em; */
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.02em;
 
   color: var(--accent-color);
 }
