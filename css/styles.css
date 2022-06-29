@@ -190,6 +190,22 @@ body {
   color: var(--accent-color);
 }
 
+.hero-cafe {
+  position: absolute;
+  right: 16px;
+  top: 153px;
+}
+
+.hero-food {
+  position: absolute;
+  right: 16px;
+  top: 245px;
+}
+
+/* .hero-item {
+  text-align: left;
+} */
+
 .hero-number {
   font-family: 'Titan One';
   font-weight: 400;
@@ -299,7 +315,7 @@ body {
 
 .hero-right {
   position: absolute;
-  bottom: 0;
+  top: 424px;
   right: 16px;
 }
 
