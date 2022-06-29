@@ -148,6 +148,15 @@ body {
   background-color: #ecebeb;
 }
 
+.icon-up-svg {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  fill: var(--accent-color);
+  cursor: pointer;
+  z-index: 1;
+}
+
 /* ----------HERO---------- */
 
 .hero {
