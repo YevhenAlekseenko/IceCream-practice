@@ -226,15 +226,19 @@ body {
   z-index: 1;
 }
 
+/* .hero-list {
+  right: 34px;
+} */
+
 .hero-cafe {
   position: absolute;
-  right: 16px;
+  right: 34px;
   top: 153px;
 }
 
 .hero-food {
   position: absolute;
-  right: 16px;
+  right: 34px;
   top: 245px;
 }
 
@@ -250,6 +254,7 @@ body {
   font-size: 46px;
   line-height: 53px;
   text-transform: uppercase;
+  right: 34px;
 
   z-index: 10;
   color: #d41443;
@@ -258,7 +263,7 @@ body {
 .hero-number::after {
   content: '';
   position: absolute;
-  right: 0;
+  right: -16px;
   top: 0;
   width: 30px;
   height: 30px;
@@ -426,6 +431,9 @@ body {
 
 .products-item-pink {
   background-color: #ffb8ca;
+}
+
+.products-item-pink::before {
 }
 
 .products-item-title {
