@@ -64,7 +64,7 @@ body {
   margin-bottom: 60px;
   margin-right: auto;
   margin-left: auto;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 .btn {
@@ -81,23 +81,43 @@ body {
   height: 44px;
 }
 
+/* ----------HEADER-HERO---------- */
+
+.header-hero-wrap {
+  background-color: var(--background-color-hero);
+}
+
+.header-hero {
+  position: relative;
+  width: 1280px;
+  height: 664px;
+  padding-top: 37px;
+  padding-right: 16px;
+  padding-left: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* ----------HEADER---------- */
 
-.header {
+/* .header {
   padding-top: 37px;
   padding-bottom: 60px;
+} */
 
-  background-color: var(--background-color-hero);
+.heder-container {
+  /* padding-bottom: 60px; */
 }
 
 .navigation {
   display: flex;
   align-items: center;
+  padding-bottom: 60px;
 }
 
 .header-list {
   display: flex;
   margin-left: 175px;
+  z-index: 2;
 }
 
 .header-item {
@@ -192,6 +212,18 @@ body {
   text-transform: uppercase;
 
   color: var(--accent-color);
+}
+
+.hero-span::after {
+  position: absolute;
+  content: '';
+  width: 534px;
+  height: 534px;
+  border-radius: 50%;
+  bottom: 76px;
+  right: 229px;
+  background-color: #ffa5ba;
+  z-index: 1;
 }
 
 .hero-cafe {
@@ -336,12 +368,14 @@ body {
   position: absolute;
   top: 424px;
   right: 16px;
+  z-index: 1;
 }
 
 .hero-ice {
   position: absolute;
-  right: 480px;
+  right: 408px;
   bottom: 0;
+  z-index: 1;
 }
 
 /* ----------PRODUCTS---------- */
@@ -520,6 +554,9 @@ body {
 
 /* ----------ADVANTAGES---------- */
 
+.advantages {
+  background-color: #fff5f6;
+}
 .advantages-list {
   display: flex;
   padding-bottom: 120px;
