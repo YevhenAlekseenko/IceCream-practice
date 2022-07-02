@@ -403,6 +403,7 @@ body {
 }
 
 .products-title {
+  margin-bottom: 261px;
   font-family: 'Titan One';
   font-weight: 400;
   font-size: 58px;
@@ -419,14 +420,20 @@ body {
 }
 
 .products-item {
+  position: relative;
+  height: 535px;
   /* flex-basis: calc((100% - 96px) / 3); */
   border-radius: 24px;
   margin: 0 auto;
+  padding-top: 165px;
+  padding-right: 75px;
+  padding-bottom: 60px;
+  padding-left: 75px;
 }
 
 .products-item + .products-item {
   margin-left: 32px;
-  height: 535px;
+  /* height: 535px; */
 }
 
 .products-item-pink {
@@ -434,6 +441,59 @@ body {
 }
 
 .products-item-pink::before {
+  position: absolute;
+  display: block;
+  content: '';
+
+  left: 50%;
+  bottom: 110%;
+  transform: translate(-50%, 50%);
+
+  width: 394px;
+  height: 394px;
+  background-image: url(../images/home-pic1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.products-item-coffee {
+  background-color: #f0d1a5;
+}
+
+.products-item-coffee::before {
+  position: absolute;
+  display: block;
+  content: '';
+
+  left: 50%;
+  bottom: 110%;
+  transform: translate(-50%, 50%);
+
+  width: 394px;
+  height: 394px;
+  background-image: url(../images/home-pic2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.products-item-green {
+  background-color: #c2e297;
+}
+
+.products-item-green::before {
+  position: absolute;
+  display: block;
+  content: '';
+
+  left: 50%;
+  bottom: 110%;
+  transform: translate(-50%, 50%);
+
+  width: 394px;
+  height: 394px;
+  background-image: url(../images/home-pic3.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .products-item-title {
@@ -449,6 +509,17 @@ body {
   color: var(--secondary-text);
 }
 
+.products-item-title::after {
+  position: absolute;
+  content: '...';
+  right: 185px;
+  bottom: 298px;
+}
+
+.products-text {
+  margin-bottom: 60px;
+}
+
 .products-text,
 .products-summary-text {
   font-family: 'DM Sans';
@@ -461,6 +532,10 @@ body {
   color: #ffffff;
 }
 
+.products-summary-text {
+  position: absolute;
+}
+
 .products-details {
   position: relative;
   left: 50%;
@@ -469,14 +544,6 @@ body {
 .products-summary {
   width: 40px;
   height: 40px;
-}
-
-.products-item-coffee {
-  background-color: #f0d1a5;
-}
-
-.products-item-green {
-  background-color: #c2e297;
 }
 
 /* ----------ABOUT---------- */
