@@ -33,7 +33,7 @@
                         <li class="header-item"><a href="#products" class="header-link">Our products</a></li>
                         <li class="header-item"><a href="#contact" class="header-link">Contact</a></li>
                     </ul>
-                    <button type="button" class="header-btn" aria-label="Buy now">Buy now
+                    <button data-modal-open type="button" class="header-btn" aria-label="Buy now">Buy now
                         <svg class="icons-vector" width="8" height="16">
                             <use href="./images/icons.svg#icon-vector"></use>
                         </svg>
@@ -357,7 +357,17 @@
             <p class="footer-copy">&copy; 2019 - IceCream. All Rights Reserved.</p>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal-form">
+            <button data-modal-close type="button" class="mobal-icon-btn">
+                <svg width="10" height="10">
+                    <use href="./images/icons.svg#icon-close" class="modal-icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
 
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
