@@ -357,17 +357,62 @@
             <p class="footer-copy">&copy; 2019 - IceCream. All Rights Reserved.</p>
         </div>
     </footer>
+
+    <!-- Modal -->
+
     <div class="backdrop is-hidden" data-modal>
-        <div class="modal-form">
+        <div class="modal-wrap">
             <button data-modal-close type="button" class="mobal-icon-btn">
                 <svg width="10" height="10">
                     <use href="./images/icons.svg#icon-close" class="modal-icon-close"></use>
                 </svg>
             </button>
+            <b class="modal-title">Buy now</b>
+            <form action="#" class="modal-form">
+                <ul class="modal-box">
+                    <li class="modal-box__item">
+                        <label class="modal-label" for="name">Name:</label>
+                        <input class="modal-input" type="text" name="name" id="name" placeholder="Name" required>
+                    </li>
+                </ul>
+                <li class="modal-box__item">
+                    <label class="modal-label" for="tel">Tel</label>
+                    <input class="modal-input" type="tel" name="tel" id="tel" value="+380" placeholder="+38067-0000000"
+                        required>
+                </li>
+                <li class="modal-box__item">
+                    <label class="modal-label" for="email">Mail</label>
+                    <input class="modal-input" type="email" name="email" id="email" placeholder="my@mail.com">
+                </li>
+                <ul class="modal-textarea-list">
+                    <li class="modal-textarea__item">
+                        <label class="modal-label" for="comment">Comment</label>
+                        <textarea class="modal-textarea" name="comment" id="comment" rows="6"
+                            placeholder="Comment"></textarea>
+                    </li>
+                </ul>
+                <button class="modal-btn" type="submit">Send</button>
+            </form>
         </div>
     </div>
 
     <script src="./js/modal.js"></script>
+
+    <!-- <script>
+        (() => {
+            document
+                .querySelector('.js-speaker-form')
+                .addEventListener('submit', e => {
+                    e.preventDefault();
+
+                    new FormData(e.currentTarget).forEach((value, name) =>
+                        console.log(`${name}: ${value}`),
+                    );
+
+                    e.currentTarget.reset();
+                });
+        })();
+    </script> -->
 </body>
 
 </html>
