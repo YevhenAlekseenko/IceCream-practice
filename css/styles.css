@@ -1044,7 +1044,18 @@ body {
   line-height: 1.8125;
   letter-spacing: 0.04em;
   transition: border-color 0.25s linear;
-  background-color: inherit;
+  /* background-color: inherit; */
+}
+
+.modal-input:hover,
+.modal-textarea:hover,
+.modal-input:focus,
+.modal-textarea:focus {
+  border-bottom: 2px solid var(--accent-color);
+}
+
+.modal-textarea {
+  height: 70px;
 }
 
 ::placeholder {
@@ -1059,7 +1070,7 @@ body {
 
 .modal-btn {
   position: absolute;
-  bottom: 40px;
+  bottom: 20px;
   right: 150px;
   width: 100px;
   height: 40px;
