@@ -354,9 +354,8 @@ body {
 .hero-summary {
 } */
 
-.hero-summary,
-.products-summary {
-  content: '';
+.hero-summary {
+  /* content: ''; */
   width: 26px;
   height: 26px;
   background-image: url(../images/arrow-right.png);
@@ -542,18 +541,28 @@ body {
   color: #ffffff;
 }
 
-.products-summary-text {
-  position: absolute;
-}
-
 .products-details {
-  position: relative;
-  left: 50%;
+  /* left: 50%; */
 }
 
 .products-summary {
+  position: relative;
+  left: 50%;
+  transform: translateY(-50%);
   width: 40px;
   height: 40px;
+  background-image: url(../images/arrow-right.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: block;
+  cursor: pointer;
+}
+
+.products-details[open] {
+}
+
+.products-details[open] .products-details__summary {
 }
 
 /* ----------ABOUT---------- */
