@@ -83,7 +83,7 @@ body {
 
 /* ----------HEADER-HERO---------- */
 
-.header-hero-wrap {
+.header-hero__wrap {
   background-color: var(--background-color-hero);
 }
 
@@ -114,22 +114,22 @@ body {
   padding-bottom: 60px;
 }
 
-.header-list {
+.header__list {
   display: flex;
   margin-left: 175px;
   z-index: 2;
 }
 
-.header-item {
+.header__item {
   /* padding-top: 52px;
   padding-bottom: 52px; */
 }
 
-.header-item + .header-item {
+.header__item + .header__item {
   margin-left: 35px;
 }
 
-.header-link {
+.header__link {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
@@ -138,12 +138,12 @@ body {
   transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-link:hover,
-.header-link:focus {
+.header__link:hover,
+.header__link:focus {
   color: var(--accent-color);
 }
 
-.header-btn {
+.header__btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -167,8 +167,8 @@ body {
   margin-left: 12px;
 }
 
-.header-btn:hover,
-.header-btn:focus {
+.header__btn:hover,
+.header__btn:focus {
   background-color: #ecebeb;
 }
 
@@ -189,16 +189,16 @@ body {
 
 /* ----------HERO---------- */
 
-.hero {
+/* .hero {
   padding-bottom: 60px;
   background-color: var(--background-color-hero);
 }
 
 .hero-container {
   position: relative;
-}
+} */
 
-.hero-title {
+.hero__title {
   font-family: 'Titan One';
   font-weight: 400;
   font-size: 38px;
@@ -210,7 +210,7 @@ body {
   color: var(--secondary-text);
 }
 
-.hero-span {
+.hero__span {
   font-family: 'Titan One';
   font-weight: 400;
   font-size: 58px;
@@ -220,7 +220,7 @@ body {
   color: var(--accent-color);
 }
 
-.hero-span::after {
+.hero__span::after {
   position: absolute;
   content: '';
   width: 534px;
@@ -236,25 +236,19 @@ body {
   right: 34px;
 } */
 
-.hero-cafe {
+.hero__cafe {
   position: absolute;
   right: 34px;
   top: 153px;
 }
 
-.hero-food {
-  position: absolute;
-  right: 34px;
-  top: 245px;
-}
-
-.hero-item {
+.hero__item {
   display: flex;
   flex-direction: column;
   align-items: end;
 }
 
-.hero-number {
+.hero__number {
   font-family: 'Titan One';
   font-weight: 400;
   font-size: 46px;
@@ -266,7 +260,7 @@ body {
   color: #d41443;
 }
 
-.hero-number::after {
+.hero__number::after {
   content: '';
   position: absolute;
   right: -16px;
@@ -278,7 +272,7 @@ body {
   z-index: -1;
 }
 
-.hero-text-right {
+.hero__text--right {
   font-family: 'DM Sans';
   font-weight: 400;
   font-size: 14px;
@@ -287,11 +281,17 @@ body {
   color: var(--secondary-text);
 }
 
-.hero-button {
+.hero__food {
+  position: absolute;
+  right: 34px;
+  top: 245px;
+}
+
+.hero__button {
   display: flex;
 }
 
-.hero-btn-accent {
+.hero__btn--accent {
   margin-right: 12px;
   min-width: 107px;
   height: 40px;
@@ -308,12 +308,12 @@ body {
   transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-btn-accent:hover,
-.hero-btn-accent:focus {
+.hero__btn--accent:hover,
+.hero__btn--accent:focus {
   background-color: #c7133e;
 }
 
-.hero-btn {
+.hero__btn {
   margin-bottom: 108px;
 
   min-width: 137px;
@@ -330,16 +330,16 @@ body {
   transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
+.hero__btn:hover,
+.hero__btn:focus {
   background-color: #ecebeb;
 }
 
-.hero-text-wrap {
+.hero-wrap {
   margin-left: 213px;
 }
 
-.hero-text {
+.hero-wrap__text {
   width: 200px;
   margin-bottom: 20px;
   font-size: 14px;
@@ -348,14 +348,7 @@ body {
   color: #ffffff;
 }
 
-/* .hero-details {
-}
-
-.hero-summary {
-} */
-
-.hero-summary {
-  /* content: ''; */
+.hero-details__summary {
   width: 26px;
   height: 26px;
   background-image: url(../images/arrow-right.png);
@@ -365,9 +358,11 @@ body {
   display: block;
 }
 
-.hero-summary-text {
-  font-size: 14px;
-  line-height: 1.43;
+.hero-details__text {
+  font-weight: 700;
+  margin-top: 20px;
+  font-size: 30px;
+  line-height: calc(34 / 30);
 
   color: #ffffff;
 }
@@ -396,10 +391,10 @@ body {
 
 .products {
   padding-top: 60px;
-  padding-bottom: 60px;
+  /* padding-bottom: 60px; */
 }
 
-.products-pre-text {
+.products__pre-text {
   font-family: 'Titan One';
   font-weight: 400;
   font-size: 30px;
@@ -411,7 +406,7 @@ body {
   color: var(--accent-text);
 }
 
-.products-title {
+.products__title {
   margin-bottom: 261px;
   font-family: 'Titan One';
   font-weight: 400;
@@ -424,11 +419,11 @@ body {
   color: var(--accent-color);
 }
 
-.products-list {
+.products__list {
   display: flex;
 }
 
-.products-item {
+.products__item {
   position: relative;
   height: 535px;
   /* flex-basis: calc((100% - 96px) / 3); */
@@ -440,16 +435,15 @@ body {
   padding-left: 75px;
 }
 
-.products-item + .products-item {
+.products__item + .products__item {
   margin-left: 32px;
-  /* height: 535px; */
 }
 
-.products-item-pink {
+.products__item--pink {
   background-color: #ffb8ca;
 }
 
-.products-item-pink::before {
+.products__item--pink::before {
   position: absolute;
   display: block;
   content: '';
@@ -465,11 +459,11 @@ body {
   background-size: contain;
 }
 
-.products-item-coffee {
+.products__item--coffee {
   background-color: #f0d1a5;
 }
 
-.products-item-coffee::before {
+.products__item--coffee::before {
   position: absolute;
   display: block;
   content: '';
@@ -485,11 +479,11 @@ body {
   background-size: contain;
 }
 
-.products-item-green {
+.products__item--green {
   background-color: #c2e297;
 }
 
-.products-item-green::before {
+.products__item--green::before {
   position: absolute;
   display: block;
   content: '';
@@ -505,7 +499,7 @@ body {
   background-size: contain;
 }
 
-.products-item-title {
+.products__item--title {
   margin-bottom: 70px;
 
   font-family: 'Titan One';
@@ -518,19 +512,19 @@ body {
   color: var(--secondary-text);
 }
 
-.products-item-title::after {
+.products__item--title::after {
   position: absolute;
   content: '...';
   right: 185px;
   bottom: 298px;
 }
 
-.products-text {
+.products__text {
   margin-bottom: 60px;
 }
 
-.products-text,
-.products-summary-text {
+.products__text,
+.products__summary--text {
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 700;
@@ -569,11 +563,16 @@ body {
 
 .about {
   padding-top: 60px;
-  padding-bottom: 39px;
+  padding-bottom: 60px;
+  background-image: url(../images/sectionbg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: 210px;
+
   background-color: #fff5f6;
 }
 
-.about-pre-text {
+.about__pre-text {
   font-family: 'Titan One';
   font-weight: 400;
   font-size: 30px;
@@ -585,7 +584,7 @@ body {
   color: var(--accent-text);
 }
 
-.about-title {
+.about__title {
   font-family: 'Titan One';
   font-weight: 400;
   font-size: 58px;
@@ -603,13 +602,13 @@ body {
   margin-top: 60px;
 }
 
-.about-content-box {
+.about-box__content {
   margin-left: 139px;
 
   max-width: 463px;
 }
 
-.about-text {
+.about-box__text {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(28 / 16);
@@ -618,7 +617,7 @@ body {
   color: var(--secondary-accent-text);
 }
 
-.about-after-text {
+.about-box__after--text {
   font-weight: 500;
   font-size: 14px;
   line-height: calc(27 / 14);
@@ -627,7 +626,7 @@ body {
   color: var(--primary-text);
 }
 
-.about-btn {
+.about__btn {
   min-width: 176px;
   height: 44px;
   font-family: inherit;
@@ -643,8 +642,8 @@ body {
   transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.about-btn:hover,
-.about-btn:focus {
+.about__btn:hover,
+.about__btn:focus {
   background-color: #ecebeb;
 }
 
@@ -652,17 +651,18 @@ body {
 
 .advantages {
   background-color: #fff5f6;
+  padding-bottom: 40px;
 }
-.advantages-list {
+.advantages__list {
   display: flex;
   padding-bottom: 120px;
 }
 
-.advantages-item {
+.advantages__item {
   position: relative;
 }
 
-.advantages-number {
+.advantages__number {
   font-family: 'Titan One';
   font-weight: 400;
   font-size: 58px;
@@ -671,7 +671,7 @@ body {
   color: var(--accent-color);
 }
 
-.advantages-icon1::before {
+.advantages__icon1::before {
   content: '';
   width: 33px;
   height: 50px;
@@ -685,7 +685,7 @@ body {
   transform: translateY(-100%);
 }
 
-.advantages-icon2::before {
+.advantages__icon2::before {
   content: '';
   width: 50px;
   height: 50px;
@@ -699,7 +699,7 @@ body {
   transform: translateY(-100%);
 }
 
-.advantages-icon3::before {
+.advantages__icon3::before {
   content: '';
   width: 44px;
   height: 50px;
@@ -713,7 +713,7 @@ body {
   transform: translateY(-100%);
 }
 
-.advantages-text {
+.advantages__text {
   font-weight: 700;
   font-size: 16px;
   line-height: calc(28 / 16);
@@ -722,13 +722,19 @@ body {
   color: var(--secondary-accent-text);
 }
 
+/* ----------GALLERY---------- */
+
+.gallery {
+  background-image: linear-gradient(0deg, #fff 60%, #fff5f6 0);
+}
+
 /* ----------REVIEWS---------- */
 
-.reviews-img {
+.reviews__img {
   margin: 0 auto;
   margin-bottom: 16px;
 }
-.reviews-text {
+.reviews__text {
   margin-bottom: 36px;
 
   font-weight: 500;
@@ -739,7 +745,7 @@ body {
   color: var(--secondary-accent-text);
 }
 
-.reviews-client {
+.reviews__client {
   font-weight: 500;
   font-size: 20px;
   line-height: calc(37 / 20);
@@ -785,14 +791,14 @@ body {
   color: var(--accent-text);
 }
 
-.contacts-item {
+.contact-item {
   padding: 40px;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   background-color: #ffffff;
 }
 
-.contacts-item + .contacts-item {
+.contact-item + .contact-item {
   margin-left: 32px;
 }
 
@@ -920,11 +926,12 @@ body {
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.02em;
+  margin-left: 6px;
 
   color: var(--secondary-accent-text);
 }
 
-.footer-contact-link {
+.footer-contacts-link {
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 700;
