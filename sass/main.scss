@@ -1,0 +1,19 @@
+@import './utils/var';
+
+@import './base/reset';
+@import './base/common';
+
+@import './components/container';
+@import './components/btn';
+@import './components/modal';
+@import './components/modal-about';
+
+@import './layout/heder';
+@import './layout/hero';
+@import './layout/products';
+@import './layout/about';
+@import './layout/advantages';
+@import './layout/gallery';
+@import './layout/reviews';
+@import './layout/contact';
+@import './layout/footer';
