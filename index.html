@@ -363,42 +363,45 @@
     <!-- Modal -->
 
     <div class="backdrop is-hidden" data-modal>
-        <div class="modal-wrap">
+        <div class="modal__wrap">
             <button data-modal-close type="button" class="mobal-icon-btn">
                 <svg width="10" height="10">
                     <use href="./images/icons.svg#icon-close" class="modal-icon-close"></use>
                 </svg>
             </button>
-            <b class="modal-title">Buy now</b>
+            <b class="modal__title">Buy now</b>
             <form action="#" class="modal-form">
-                <ul class="modal-box">
-                    <li class="modal-box__item">
-                        <label class="modal-label" for="name">Name*:</label>
-                        <input class="modal-input" type="text" name="name" id="name" placeholder="Jon Johnson" required>
+                <ul class="modal__box">
+                    <li class="modal__box--item">
+                        <label class="modal__label" for="name">Name*:</label>
+                        <input class="modal__input" type="text" name="name" id="name" placeholder="Jon Johnson"
+                            required>
                     </li>
                 </ul>
-                <li class="modal-box__item">
-                    <label class="modal-label" for="tel">Tel*</label>
-                    <input class="modal-input" type="tel" name="tel" id="tel" placeholder="+380671234567" required>
+                <li class="modal__box--item">
+                    <label class="modal__label" for="tel">Tel*</label>
+                    <input class="modal__input" type="tel" name="tel" id="tel" placeholder="+380671234567" required>
                 </li>
-                <li class="modal-box__item">
-                    <label class="modal-label" for="email">Mail</label>
-                    <input class="modal-input" type="email" name="email" id="email" placeholder="my@mail.com">
+                <li class="modal__box--item">
+                    <label class="modal__label" for="email">Mail</label>
+                    <input class="modal__input" type="email" name="email" id="email" placeholder="my@mail.com">
                 </li>
                 <ul class="modal-textarea-list">
-                    <li class="modal-textarea__item">
-                        <label class="modal-label" for="comment">Comment</label>
-                        <textarea class="modal-textarea" name="comment" id="comment" rows="6"
+                    <li class="modal__textarea--item">
+                        <label class="modal__label" for="comment">Comment</label>
+                        <textarea class="modal__textarea" name="comment" id="comment" rows="6"
                             placeholder="Comment"></textarea>
                     </li>
                 </ul>
-                <button class="modal-btn" type="submit">Send</button>
+                <button class="modal__btn" type="submit">Send</button>
             </form>
         </div>
     </div>
 
+    <!-- About-modal -->
+
     <div class="about-modal is-hidden" about-modal>
-        <div class="about-modal-wrap">
+        <div class="about-modal__wrap">
             <button about-modal-close type="button" class="mobal-icon-btn">
                 <svg width="10" height="10">
                     <use href="./images/icons.svg#icon-close" class="modal-icon-close"></use>
