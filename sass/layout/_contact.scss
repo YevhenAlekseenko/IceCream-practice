@@ -1,4 +1,4 @@
-.contact-title {
+.contact__title {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(30 / 16);
@@ -7,23 +7,7 @@
   background-color: rgba(240, 209, 165, 1);
 }
 
-.contact-list-title {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: calc(30 / 16);
-
-  color: var(--secondary-accent-text);
-}
-
-.contact-list-paragraph {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: calc(29 / 16);
-
-  color: var(--primary-text);
-}
-
-.contact-list {
+.contact__list {
   display: flex;
   margin-bottom: 60px;
   font-weight: 500;
@@ -33,7 +17,7 @@
   color: var(--accent-text);
 }
 
-.contact-item {
+.contact__item {
   padding: 40px;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
@@ -44,7 +28,15 @@
   }
 }
 
-.contact-list-link {
+.contact__list--title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+
+  color: var(--secondary-accent-text);
+}
+
+.contact__list--paragraph {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(29 / 16);
@@ -52,13 +44,21 @@
   color: var(--primary-text);
 }
 
-.contacts-list-btn {
+.contact__list--link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(29 / 16);
+
+  color: var(--primary-text);
+}
+
+.contacts__list--btn {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.contacts-btn-accent {
+.contacts__btn--accent {
   margin-right: 15px;
 
   min-width: 198px;
@@ -80,7 +80,7 @@
   }
 }
 
-.contacts-btn {
+.contacts__btn {
   min-width: 180px;
   font-weight: 700;
   font-size: 16px;
