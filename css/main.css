@@ -822,6 +822,10 @@ textarea {
   background-color: rgb(240, 209, 165);
 }
 
+.contact__title--green {
+  background-color: #c2e297;
+}
+
 .contact__list {
   display: flex;
   margin-bottom: 60px;
