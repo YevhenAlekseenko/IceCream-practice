@@ -815,9 +815,11 @@ textarea {
 }
 
 .contact__title {
+  padding: 4px 17px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.875;
+  border-radius: 5px;
   color: var(--secondary-text);
   background-color: rgb(240, 209, 165);
 }
@@ -846,6 +848,7 @@ textarea {
 }
 
 .contact__list--title {
+  margin-top: 32px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.875;
