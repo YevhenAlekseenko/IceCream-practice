@@ -1,3 +1,21 @@
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+textarea {
+  resize: none;
+}
+
+.modal-textarea {
+  height: 70px;
+}
+
+::placeholder {
+  color: var(--accent-text);
+}
+
 .backdrop {
   width: 100vw;
   height: 100vh;
@@ -18,22 +36,22 @@
   transform: translate(-50%, -50%);
   border-radius: 24px;
   padding: 44px;
-}
 
-.modal-wrap::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-image: url(../images/home-pic3.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.2;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/home-pic3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.2;
 
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+  }
 }
 
 .mobal-icon-btn {
@@ -50,13 +68,13 @@
   transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 500ms cubic-bezier(0.4, 0, 0.2, 1),
     border 500ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.mobal-icon-btn:hover,
-.mobal-icon-btn:focus {
-  fill: #ffffff;
-  border: var(--accent-color);
-  background-color: var(--background-color-hero);
+  &:hover,
+  &:focus {
+    fill: #ffffff;
+    border: var(--accent-color);
+    background-color: var(--background-color-hero);
+  }
 }
 
 .modal-title {
@@ -115,20 +133,6 @@
   border-bottom: 2px solid var(--accent-color);
 }
 
-.modal-textarea {
-  height: 70px;
-}
-
-::placeholder {
-  color: var(--accent-text);
-}
-
-.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-}
-
 .modal-btn {
   position: absolute;
   bottom: 20px;
@@ -144,15 +148,11 @@
   transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1),
     color 500ms cubic-bezier(0.4, 0, 0.2, 1),
     border 500ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.modal-btn:hover,
-.modal-btn:focus {
-  color: #ffffff;
-  background-color: var(--background-color-hero);
-  border: transparent;
-}
-
-textarea {
-  resize: none;
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: var(--background-color-hero);
+    border: transparent;
+  }
 }

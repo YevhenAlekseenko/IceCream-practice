@@ -7,6 +7,19 @@
   --primary-text: #907e82;
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 p,
 h1,
 h2,
@@ -40,7 +53,7 @@ button {
 }
 
 body {
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
   letter-spacing: 0.04em;
 }
 
@@ -66,12 +79,30 @@ body {
   height: 44px;
 }
 
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+textarea {
+  resize: none;
+}
+
+.modal-textarea {
+  height: 70px;
+}
+
+::placeholder {
+  color: var(--accent-text);
+}
+
 .backdrop {
   width: 100vw;
   height: 100vh;
   top: 0;
   position: fixed;
-  background-color: hsla(0deg, 0%, 0%, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
   z-index: 2;
 }
 
@@ -88,7 +119,7 @@ body {
 }
 
 .modal-wrap::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 100%;
@@ -115,8 +146,7 @@ body {
   transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1), fill 500ms cubic-bezier(0.4, 0, 0.2, 1), border 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mobal-icon-btn:hover,
-.mobal-icon-btn:focus {
+.mobal-icon-btn:hover, .mobal-icon-btn:focus {
   fill: #ffffff;
   border: var(--accent-color);
   background-color: var(--background-color-hero);
@@ -124,7 +154,7 @@ body {
 
 .modal-title {
   margin-bottom: 20px;
-  font-family: "Titan One";
+  font-family: 'Titan One';
   font-weight: 400;
   font-size: 38px;
   line-height: 44px;
@@ -178,20 +208,6 @@ body {
   border-bottom: 2px solid var(--accent-color);
 }
 
-.modal-textarea {
-  height: 70px;
-}
-
-::placeholder {
-  color: var(--accent-text);
-}
-
-.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-}
-
 .modal-btn {
   position: absolute;
   bottom: 20px;
@@ -205,15 +221,10 @@ body {
   transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1), color 500ms cubic-bezier(0.4, 0, 0.2, 1), border 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-btn:hover,
-.modal-btn:focus {
+.modal-btn:hover, .modal-btn:focus {
   color: #ffffff;
   background-color: var(--background-color-hero);
   border: transparent;
-}
-
-textarea {
-  resize: none;
 }
 
 .about-modal {
@@ -221,7 +232,7 @@ textarea {
   height: 100vh;
   top: 0;
   position: fixed;
-  background-color: hsla(0deg, 0%, 0%, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
   z-index: 2;
 }
 
@@ -238,7 +249,7 @@ textarea {
 }
 
 .about-modal-wrap::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 100%;
@@ -267,14 +278,6 @@ textarea {
   margin-right: auto;
 }
 
-/* .header {
-  padding-top: 37px;
-  padding-bottom: 60px;
-} */
-.heder-container {
-  /* padding-bottom: 60px; */
-}
-
 .navigation {
   display: flex;
   align-items: center;
@@ -285,11 +288,6 @@ textarea {
   display: flex;
   margin-left: 175px;
   z-index: 2;
-}
-
-.header__item {
-  /* padding-top: 52px;
-  padding-bottom: 52px; */
 }
 
 .header__item + .header__item {
@@ -304,8 +302,7 @@ textarea {
   transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header__link:hover,
-.header__link:focus {
+.header__link:hover, .header__link:focus {
   color: var(--accent-color);
 }
 
@@ -325,13 +322,12 @@ textarea {
   transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icons-vector {
-  margin-left: 12px;
+.header__btn:hover, .header__btn:focus {
+  background-color: #ecebeb;
 }
 
-.header__btn:hover,
-.header__btn:focus {
-  background-color: #ecebeb;
+.icons-vector {
+  margin-left: 12px;
 }
 
 .icon-up-svg {
@@ -340,35 +336,25 @@ textarea {
   right: 30px;
   fill: var(--accent-text);
   cursor: pointer;
-  /* z-index: 1; */
   transition: fill 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-up-svg:hover {
+.icon-up-svg:hover, .icon-up-svg:focus {
   fill: var(--accent-color);
 }
 
-/* .hero {
-  padding-bottom: 60px;
-  background-color: var(--background-color-hero);
-}
-
-.hero-container {
-  position: relative;
-} */
 .hero__title {
-  font-family: "Titan One";
+  font-family: 'Titan One';
   font-weight: 400;
   font-size: 38px;
   line-height: 1.16;
   text-transform: uppercase;
-  /* padding-top: 147px; */
   margin-bottom: 24px;
   color: var(--secondary-text);
 }
 
 .hero__span {
-  font-family: "Titan One";
+  font-family: 'Titan One';
   font-weight: 400;
   font-size: 58px;
   line-height: 0.9;
@@ -378,7 +364,7 @@ textarea {
 
 .hero__span::after {
   position: absolute;
-  content: "";
+  content: '';
   width: 534px;
   height: 534px;
   border-radius: 50%;
@@ -388,9 +374,6 @@ textarea {
   z-index: 1;
 }
 
-/* .hero-list {
-  right: 34px;
-} */
 .hero__cafe {
   position: absolute;
   right: 34px;
@@ -404,7 +387,7 @@ textarea {
 }
 
 .hero__number {
-  font-family: "Titan One";
+  font-family: 'Titan One';
   font-weight: 400;
   font-size: 46px;
   line-height: 53px;
@@ -415,7 +398,7 @@ textarea {
 }
 
 .hero__number::after {
-  content: "";
+  content: '';
   position: absolute;
   right: -16px;
   top: 0;
@@ -427,7 +410,7 @@ textarea {
 }
 
 .hero__text--right {
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   font-weight: 400;
   font-size: 14px;
   line-height: 1.28;
@@ -448,7 +431,7 @@ textarea {
   margin-right: 12px;
   min-width: 107px;
   height: 40px;
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   font-size: 14px;
   line-height: 1.28;
   align-items: center;
@@ -458,8 +441,7 @@ textarea {
   transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero__btn--accent:hover,
-.hero__btn--accent:focus {
+.hero__btn--accent:hover, .hero__btn--accent:focus {
   background-color: #c7133e;
 }
 
@@ -477,8 +459,7 @@ textarea {
   transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero__btn:hover,
-.hero__btn:focus {
+.hero__btn:hover, .hero__btn:focus {
   background-color: #ecebeb;
 }
 
@@ -508,7 +489,7 @@ textarea {
   font-weight: 700;
   margin-top: 20px;
   font-size: 30px;
-  line-height: 1.1333333333;
+  line-height: calc(34 / 30);
   color: #ffffff;
 }
 
@@ -538,7 +519,7 @@ textarea {
 }
 
 .products__pre-text {
-  font-family: "Titan One";
+  font-family: 'Titan One';
   font-weight: 400;
   font-size: 30px;
   line-height: 1.13;
@@ -550,7 +531,7 @@ textarea {
 
 .products__title {
   margin-bottom: 261px;
-  font-family: "Titan One";
+  font-family: 'Titan One';
   font-weight: 400;
   font-size: 58px;
   line-height: 1.14;
@@ -567,17 +548,13 @@ textarea {
 .products__item {
   position: relative;
   height: 535px;
-  /* flex-basis: calc((100% - 96px) / 3); */
+  flex-basis: calc((100% - 96px) / 3);
   border-radius: 24px;
   margin: 0 auto;
   padding-top: 165px;
   padding-right: 75px;
   padding-bottom: 60px;
   padding-left: 75px;
-}
-
-.products__item + .products__item {
-  margin-left: 32px;
 }
 
 .products__item--pink {
@@ -587,7 +564,7 @@ textarea {
 .products__item--pink::before {
   position: absolute;
   display: block;
-  content: "";
+  content: '';
   left: 50%;
   bottom: 110%;
   transform: translate(-50%, 50%);
@@ -605,7 +582,7 @@ textarea {
 .products__item--coffee::before {
   position: absolute;
   display: block;
-  content: "";
+  content: '';
   left: 50%;
   bottom: 110%;
   transform: translate(-50%, 50%);
@@ -623,7 +600,7 @@ textarea {
 .products__item--green::before {
   position: absolute;
   display: block;
-  content: "";
+  content: '';
   left: 50%;
   bottom: 110%;
   transform: translate(-50%, 50%);
@@ -636,10 +613,10 @@ textarea {
 
 .products__item--title {
   margin-bottom: 70px;
-  font-family: "Titan One";
+  font-family: 'Titan One';
   font-weight: 400;
   font-size: 30px;
-  line-height: 1.1333333333;
+  line-height: calc(34 / 30);
   text-align: center;
   text-transform: uppercase;
   color: var(--secondary-text);
@@ -647,7 +624,7 @@ textarea {
 
 .products__item--title::after {
   position: absolute;
-  content: "...";
+  content: '...';
   right: 185px;
   bottom: 298px;
 }
@@ -658,17 +635,13 @@ textarea {
 
 .products__text,
 .products__summary--text {
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.75;
+  line-height: calc(28 / 16);
   text-align: center;
   color: #ffffff;
-}
-
-.products-details {
-  /* left: 50%; */
 }
 
 .products-summary {
@@ -696,10 +669,10 @@ textarea {
 }
 
 .about__pre-text {
-  font-family: "Titan One";
+  font-family: 'Titan One';
   font-weight: 400;
   font-size: 30px;
-  line-height: 1.1333333333;
+  line-height: calc(34 / 30);
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 16px;
@@ -707,10 +680,10 @@ textarea {
 }
 
 .about__title {
-  font-family: "Titan One";
+  font-family: 'Titan One';
   font-weight: 400;
   font-size: 58px;
-  line-height: 1.1379310345;
+  line-height: calc(66 / 58);
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -731,7 +704,7 @@ textarea {
 .about-box__text {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.75;
+  line-height: calc(28 / 16);
   margin-bottom: 32px;
   color: var(--secondary-accent-text);
 }
@@ -739,7 +712,7 @@ textarea {
 .about-box__after--text {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.9285714286;
+  line-height: calc(27 / 14);
   margin-bottom: 40px;
   color: var(--primary-text);
 }
@@ -750,7 +723,7 @@ textarea {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.3125;
+  line-height: calc(21 / 16);
   align-items: center;
   text-align: center;
   color: var(--accent-color);
@@ -758,8 +731,7 @@ textarea {
   transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.about__btn:hover,
-.about__btn:focus {
+.about__btn:hover, .about__btn:focus {
   background-color: #ecebeb;
 }
 
@@ -778,7 +750,7 @@ textarea {
 }
 
 .advantages__number {
-  font-family: "Titan One";
+  font-family: 'Titan One';
   font-weight: 400;
   font-size: 58px;
   line-height: 66px;
@@ -786,7 +758,7 @@ textarea {
 }
 
 .advantages__icon1::before {
-  content: "";
+  content: '';
   width: 33px;
   height: 50px;
   background-image: url(../images/advantages-icon1.png);
@@ -799,7 +771,7 @@ textarea {
 }
 
 .advantages__icon2::before {
-  content: "";
+  content: '';
   width: 50px;
   height: 50px;
   background-image: url(../images/advantages-icon2.png);
@@ -812,7 +784,7 @@ textarea {
 }
 
 .advantages__icon3::before {
-  content: "";
+  content: '';
   width: 44px;
   height: 50px;
   background-image: url(../images/advantages-icon3.png);
@@ -827,7 +799,7 @@ textarea {
 .advantages__text {
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.75;
+  line-height: calc(28 / 16);
   letter-spacing: 0.02em;
   color: var(--secondary-accent-text);
 }
@@ -845,7 +817,7 @@ textarea {
   margin-bottom: 36px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.875;
+  line-height: calc(30 / 16);
   text-align: center;
   color: var(--secondary-accent-text);
 }
@@ -853,7 +825,7 @@ textarea {
 .reviews__client {
   font-weight: 500;
   font-size: 20px;
-  line-height: 1.85;
+  line-height: calc(37 / 20);
   text-align: center;
   color: var(--secondary-accent-text);
 }
@@ -861,22 +833,22 @@ textarea {
 .contact-title {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.875;
+  line-height: calc(30 / 16);
   color: var(--secondary-text);
-  background-color: rgb(240, 209, 165);
+  background-color: #f0d1a5;
 }
 
 .contact-list-title {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.875;
+  line-height: calc(30 / 16);
   color: var(--secondary-accent-text);
 }
 
 .contact-list-paragraph {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.8125;
+  line-height: calc(29 / 16);
   color: var(--primary-text);
 }
 
@@ -885,7 +857,7 @@ textarea {
   margin-bottom: 60px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.875;
+  line-height: calc(30 / 16);
   color: var(--accent-text);
 }
 
@@ -903,7 +875,7 @@ textarea {
 .contact-list-link {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.8125;
+  line-height: calc(29 / 16);
   color: var(--primary-text);
 }
 
@@ -919,7 +891,7 @@ textarea {
   height: 44px;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.3125;
+  line-height: calc(21 / 16);
   align-items: center;
   text-align: center;
   color: var(--secondary-text);
@@ -927,8 +899,7 @@ textarea {
   transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts-btn-accent:hover,
-.contacts-btn-accent:focus {
+.contacts-btn-accent:hover, .contacts-btn-accent:focus {
   background-color: #c7133e;
 }
 
@@ -936,7 +907,7 @@ textarea {
   min-width: 180px;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.3125;
+  line-height: calc(21 / 16);
   align-items: center;
   text-align: center;
   color: var(--accent-color);
@@ -944,8 +915,7 @@ textarea {
   transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts-btn:hover,
-.contacts-btn:focus {
+.contacts-btn:hover, .contacts-btn:focus {
   background-color: #ecebeb;
 }
 
@@ -959,19 +929,19 @@ textarea {
 }
 
 .footer-subtitle {
-  font-family: "Titan One";
+  font-family: 'Titan One';
   font-weight: 400;
   font-size: 30px;
-  line-height: 1.1333333333;
+  line-height: calc(34 / 30);
   text-transform: uppercase;
   color: var(--accent-text);
 }
 
 .footer-text {
-  font-family: "Titan One";
+  font-family: 'Titan One';
   font-weight: 400;
   font-size: 58px;
-  line-height: 1.1379310345;
+  line-height: calc(66 / 58);
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--accent-color);
@@ -998,8 +968,7 @@ textarea {
   margin-left: 25px;
 }
 
-.footer-item:hover,
-.footer-item:focus {
+.footer-item:hover, .footer-item:focus {
   background-color: #d41443;
 }
 
@@ -1011,18 +980,18 @@ textarea {
 .footer-contacts {
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.875;
+  line-height: calc(30 / 16);
   letter-spacing: 0.02em;
   margin-left: 6px;
   color: var(--secondary-accent-text);
 }
 
 .footer-contacts-link {
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.875;
+  line-height: calc(30 / 16);
   letter-spacing: 0.02em;
   color: var(--accent-color);
 }
@@ -1030,8 +999,9 @@ textarea {
 .footer-copy {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.8571428571;
+  line-height: calc(26 / 14);
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--primary-text);
-}/*# sourceMappingURL=main.css.map */
+}
+/*# sourceMappingURL=main.css.map */

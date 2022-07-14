@@ -38,10 +38,10 @@
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   background-color: #ffffff;
-}
 
-.contact-item + .contact-item {
-  margin-left: 32px;
+  & + & {
+    margin-left: 32px;
+  }
 }
 
 .contact-list-link {
@@ -73,11 +73,11 @@
   background-color: var(--accent-color);
 
   transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.contacts-btn-accent:hover,
-.contacts-btn-accent:focus {
-  background-color: #c7133e;
+  &:hover,
+  &:focus {
+    background-color: #c7133e;
+  }
 }
 
 .contacts-btn {
@@ -92,9 +92,9 @@
   background-color: #ffffff;
 
   transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.contacts-btn:hover,
-.contacts-btn:focus {
-  background-color: #ecebeb;
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
 }
