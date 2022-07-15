@@ -324,40 +324,42 @@
     </main>
 
     <footer class="footer">
-        <div class="container footer-container">
+        <div class="container footer__container">
             <div class="footer-content">
-                <p class="footer-subtitle">homemade ice cream made</p>
-                <span class="footer-text">with passion</span>
+                <p class="footer__subtitle">homemade ice cream made</p>
+                <span class="footer__text">with passion</span>
             </div>
             <div class="footer-social">
-                <ul class="footer-list">
-                    <li class="footer-item">
-                        <a href="https://github.com/" class="footer-link" target="_blank" aria-label="github">
+                <ul class="footer-social__list">
+                    <li class="footer-social__item">
+                        <a href="https://github.com/" class="footer-social__link" target="_blank" aria-label="github">
                             <svg width="20" height="20">
                                 <use href="./images/icons.svg#icon-github"></use>
                             </svg></a>
                     </li>
-                    <li class="footer-item">
-                        <a href="https://web.telegram.org" class="footer-link" target="_blank" aria-label="telegram">
+                    <li class="footer-social__item">
+                        <a href="https://web.telegram.org" class="footer-social__link" target="_blank"
+                            aria-label="telegram">
                             <svg width="20.4" height="15.87">
                                 <use href="./images/icons.svg#icon-telegram"></use>
                             </svg></a>
                     </li>
-                    <li class="footer-item">
-                        <a href="https://www.facebook.com/" class="footer-link" target="_blank" aria-label="facebook">
+                    <li class="footer-social__item">
+                        <a href="https://www.facebook.com/" class="footer-social__link" target="_blank"
+                            aria-label="facebook">
                             <svg width="9.35" height="20.4">
                                 <use href="./images/icons.svg#icon-fecebook"></use>
                             </svg></a>
                     </li>
                 </ul>
-                <div class="footer-contacts-text">
-                    <p class="footer-contacts">Feel free to contact</p>
-                    <a href="tel:+610383766284" class="footer-contacts-link footer-contacts"> +61(0) 383 766 284</a>
+                <div class="footer-contacts">
+                    <p class="footer-contacts__text">Feel free to contact</p>
+                    <a href="tel:+610383766284" class="footer-contacts__link footer-contacts"> +61(0) 383 766 284</a>
                 </div>
             </div>
         </div>
         <div class="footer-copy">
-            <p class="footer-copy">&copy; 2019 - IceCream. All Rights Reserved.</p>
+            <p class="footer-copy__text">&copy; 2019 - IceCream. All Rights Reserved.</p>
         </div>
     </footer>
 
@@ -427,22 +429,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
-
-    <!-- <script>
-        (() => {
-            document
-                .querySelector('.js-speaker-form')
-                .addEventListener('submit', e => {
-                    e.preventDefault();
-
-                    new FormData(e.currentTarget).forEach((value, name) =>
-                        console.log(`${name}: ${value}`),
-                    );
-
-                    e.currentTarget.reset();
-                });
-        })();
-    </script> -->
 </body>
 
 </html>

@@ -1,12 +1,12 @@
 .footer {
   background-color: #fff5f6;
 }
-.footer-container {
+.footer__container {
   display: flex;
   justify-content: space-between;
 }
 
-.footer-subtitle {
+.footer__subtitle {
   font-family: 'Titan One';
   font-weight: 400;
   font-size: 30px;
@@ -16,7 +16,7 @@
   color: var(--accent-text);
 }
 
-.footer-text {
+.footer__text {
   font-family: 'Titan One';
   font-weight: 400;
   font-size: 58px;
@@ -27,12 +27,12 @@
   color: var(--accent-color);
 }
 
-.footer-list {
+.footer-social__list {
   display: flex;
   margin-bottom: 40px;
 }
 
-.footer-item {
+.footer-social__item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -55,22 +55,22 @@
   }
 }
 
-.footer-contacts-text {
+.footer-contacts {
   display: inline-flex;
   align-items: center;
 }
 
-.footer-contacts {
+.footer-contacts__text {
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.02em;
-  margin-left: 6px;
+  margin-right: 5px;
 
   color: var(--secondary-accent-text);
 }
 
-.footer-contacts-link {
+.footer-contacts__link {
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 700;
@@ -81,7 +81,7 @@
   color: var(--accent-color);
 }
 
-.footer-copy {
+.footer-copy__text {
   font-weight: 700;
   font-size: 14px;
   line-height: calc(26 / 14);
