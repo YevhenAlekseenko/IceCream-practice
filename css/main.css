@@ -646,6 +646,7 @@ textarea {
 }
 
 .about {
+  min-width: 1280px;
   padding-top: 60px;
   padding-bottom: 60px;
   background-image: url(../images/sectionbg.png);
@@ -722,6 +723,7 @@ textarea {
 }
 
 .advantages {
+  min-width: 1280px;
   background-color: #fff5f6;
   padding-bottom: 40px;
 }
@@ -817,6 +819,7 @@ textarea {
 }
 
 .contact-section {
+  min-width: 1280px;
   background-image: linear-gradient(#fff 14%, #fff5f6 0);
   padding-bottom: 60px;
 }
@@ -915,6 +918,7 @@ textarea {
 }
 
 .footer {
+  min-width: 1280px;
   background-color: #fff5f6;
 }
 
