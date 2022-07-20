@@ -1,66 +1,165 @@
-.about {
-  min-width: 1280px;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-image: url(../images/sectionbg.png);
+.about-section {
+  background-image: url(/images/milkdrops-mob-1x.png);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position-y: 210px;
-
+  background-position-y: 500px;
   background-color: #fff5f6;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/images/milkdrops-mob-2x.png);
+  }
+
+  @include tab {
+    background-image: none;
+  }
+
+  @include desk {
+    background-image: url(/images/milkdrops.png);
+    background-repeat: no-repeat;
+    background-position-y: 170px;
+    background-size: contain;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(/images/milkdrops-desk-2x.png);
+    }
+  }
+}
+
+.about-container {
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @include tab {
+    padding-top: 20px;
+    padding-bottom: 80px;
+  }
+
+  @include desk {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .about__pre-text {
   font-family: 'Titan One';
   font-weight: 400;
-  font-size: 30px;
-  line-height: calc(34 / 30);
+
+  font-size: 18px;
+  line-height: calc(21 / 18);
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 16px;
+  // margin-bottom: 16px;
+  margin-bottom: 15px;
 
   color: var(--accent-text);
+
+  @include tab {
+    font-size: 26px;
+    line-height: calc(30 / 26);
+  }
+
+  @include desk {
+    font-size: 30px;
+    line-height: calc(34 / 30);
+  }
 }
 
 .about__title {
   font-family: 'Titan One';
   font-weight: 400;
-  font-size: 58px;
-  line-height: calc(66 / 58);
+
+  font-size: 34px;
+  line-height: calc(39 / 39);
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
   color: var(--accent-color);
+
+  @include tab {
+    font-size: 48px;
+    line-height: calc(55 / 48);
+    margin-bottom: 40px;
+  }
+
+  @include desk {
+    font-size: 58px;
+    line-height: calc(66 / 58);
+    margin-bottom: 60px;
+  }
 }
 
 .about-box {
-  display: flex;
-  align-items: center;
-  margin-top: 60px;
+  // align-items: center;
+  // margin-top: 60px;
+
+  @include tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.about-img {
+  margin: 0 auto;
 }
 
 .about-box__content {
-  margin-left: 139px;
-  max-width: 463px;
+  max-width: 220px;
+
+  @include tab {
+    max-width: 334px;
+    margin-left: 32px;
+  }
+
+  @include desk {
+    max-width: 463px;
+    margin-left: 139px;
+  }
 }
 
 .about-box__text {
   font-weight: 500;
-  font-size: 16px;
-  line-height: calc(28 / 16);
+
+  font-size: 12px;
+  line-height: calc(19 / 12);
   margin-bottom: 32px;
 
   color: var(--secondary-accent-text);
+
+  @include tab {
+    font-size: 14px;
+    line-height: calc(25 / 14);
+  }
+
+  @include desk {
+    font-size: 16px;
+    line-height: calc(28 / 16);
+  }
 }
 
 .about-box__after--text {
   font-weight: 500;
-  font-size: 14px;
-  line-height: calc(27 / 14);
-  margin-bottom: 40px;
-
+  font-size: 12px;
+  line-height: calc(19 / 12);
+  margin-bottom: 20px;
   color: var(--primary-text);
+
+  @include tab {
+    font-size: 14px;
+    line-height: calc(25 / 14);
+    margin-bottom: 40px;
+  }
+
+  @include desk {
+    font-size: 14px;
+    line-height: calc(27 / 14);
+  }
 }
 
 .about-box__btn {

@@ -21,10 +21,9 @@
 </head>
 
 <body>
-    <div class="header-hero__wrap">
+    <!-- <div class="header-hero__wrap">
         <section class="header-hero container ">
             <header class="header" id="home">
-                <!-- <div class="container heder-container"> -->
                 <nav class="navigation">
                     <a href="./index.html"><img src="./images/logo.png" alt="Лого"></a>
                     <ul class="header__list">
@@ -47,13 +46,11 @@
                         </a>
                     </div>
                 </nav>
-                <!-- </div> -->
-            </header>
+            </header> -->
 
-            <!-- Hero -->
-            <!-- <section class="hero section"> -->
-            <!-- <div class="container hero-container"> -->
-            <h1 class="hero__title">ice cream <br> made with <br> <span class="hero__span">passion</span></h1>
+    <!-- Hero -->
+
+    <!-- <h1 class="hero__title">ice cream <br> made with <br> <span class="hero__span">passion</span></h1>
             <ul class="hero__list">
                 <div class="hero__cafe">
                     <li class="hero__item">
@@ -85,14 +82,12 @@
             </div>
             <img class="hero-ice" src="./images/hero-ice-cream.png" width="236" height="557" alt="IceCream">
             <img class="hero-right" src="./images/hero-right.png" width="304" height="241" alt="Girl eating ice cream">
-            <!-- </div> -->
-            <!-- </section> -->
         </section>
-    </div>
+    </div> -->
 
     <!-- Products -->
     <main>
-        <section class="products section" id="products">
+        <!-- <section class="products section" id="products">
             <div class="container">
                 <p class="products__pre-text">100% natural</p>
                 <h2 class="products__title">products</h2>
@@ -136,16 +131,28 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
         <!-- About (how it’s made?) -->
 
-        <section class="about section" id="how-it’s-made">
-            <div class="container">
+        <section class="about-section section" id="how-it’s-made">
+            <div class="about-container container">
                 <p class="about__pre-text">tradition and love</p>
                 <h2 class="about__title">how it’s made?</h2>
                 <div class="about-box">
-                    <img src="./images/about-cow.png" class="about-img" alt="Cow with milk" width="501" height="501">
+                    <picture>
+                        <source srcset="./images/about-cow-desk-1x.png 1x,
+                                    ./images/about-cow-desk-2x.png 2x" media="(min-width: 1200px)">
+
+                        <source srcset="./images/about-cow-tab-1x.png 1x,
+                                        ./images/about-cow-tab-2x.png 2x" media="(min-width: 768px)">
+
+                        <source srcset="./images/about-cow-mob-1x.png 1x,
+                                        ./images/about-cow-mob-2x.png 2x" media="(max-width: 767px)">
+
+                        <img src="./images/about-cow-desk-1x.png" class="about-img" alt="Cow with milk">
+                    </picture>
+
                     <div class="about-box__content">
                         <p class="about-box__text">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
                             justo
@@ -176,7 +183,7 @@
 
         <!-- Advantages -->
 
-        <section class="advantages section">
+        <!-- <section class="advantages section">
             <div class="container">
                 <h2 class="advantages__title visually-hidden">Advantages</h2>
                 <ul class="advantages__list">
@@ -194,20 +201,20 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
         <!-- Gallery -->
 
-        <section class="gallery section">
+        <!-- <section class="gallery section">
             <div class="container">
                 <h2 class="gallery__title visually-hidden">Gallery</h2>
                 <img src="./images/gallery.jpg" class="gallery-img" alt="Gallery photo" width="1280" height="430">
             </div>
-        </section>
+        </section> -->
 
         <!-- Customer Reviews -->
 
-        <Section class="reviews section" id="about">
+        <!-- <Section class="reviews section" id="about">
             <div class="container">
                 <h2 class="reviews visually-hidden">Customer Reviews</h2>
                 <img class="reviews__img" src="./images/testimonials1.jpg" alt="Reviews" width="55" height="55">
@@ -217,11 +224,11 @@
                     congue. Lorem ipsum primis in nibh vel risus.</p>
                 <p class="reviews__client">Emily, Los Angeles</p>
             </div>
-        </Section>
+        </Section> -->
 
         <!-- Contact -->
 
-        <section class="contact-section" id="contact">
+        <!-- <section class="contact-section" id="contact">
             <div class="container">
                 <h2 class="contact__title visually-hidden">Contacts</h2>
                 <ul class="contact__list">
@@ -320,10 +327,10 @@
                     </ul>
                 </address>
             </div>
-        </section>
+        </section> -->
     </main>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container footer__container">
             <div class="footer-content">
                 <p class="footer__subtitle">homemade ice cream made</p>
@@ -361,7 +368,7 @@
         <div class="footer-copy">
             <p class="footer-copy__text">&copy; 2019 - IceCream. All Rights Reserved.</p>
         </div>
-    </footer>
+    </footer> -->
 
     <!-- Modal -->
 
