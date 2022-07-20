@@ -69,7 +69,6 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
-  border: 2px solid red;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -843,26 +842,43 @@ textarea {
 }
 
 .advantages {
-  min-width: 1280px;
+  max-width: 100%;
   background-color: #fff5f6;
-  padding-bottom: 40px;
+  padding-bottom: 80px;
 }
 
 .advantages__list {
-  display: flex;
-  padding-bottom: 120px;
+  max-width: 230px;
+}
+@media screen and (min-width: 768px) {
+  .advantages__list {
+    display: flex;
+    margin-right: 204px;
+    max-width: 527px;
+  }
 }
 
 .advantages__item {
   position: relative;
 }
 
+.advantages__item:not(lact-child) {
+  margin-bottom: 32px;
+}
+
 .advantages__number {
+  margin-bottom: 16px;
   font-family: "Titan One";
   font-weight: 400;
-  font-size: 58px;
-  line-height: 66px;
+  font-size: 36px;
+  line-height: 1.1388888889;
   color: var(--accent-color);
+}
+@media screen and (min-width: 768px) {
+  .advantages__number {
+    font-size: 48px;
+    line-height: 1.1458333333;
+  }
 }
 
 .advantages__icon1::before {
@@ -872,10 +888,7 @@ textarea {
   background-image: url(../images/advantages-icon1.png);
   background-repeat: no-repeat;
   background-size: contain;
-  position: absolute;
-  top: -40px;
-  left: 0;
-  transform: translateY(-100%);
+  display: block;
 }
 
 .advantages__icon2::before {
@@ -885,10 +898,7 @@ textarea {
   background-image: url(../images/advantages-icon2.png);
   background-repeat: no-repeat;
   background-size: contain;
-  position: absolute;
-  top: -40px;
-  left: 0;
-  transform: translateY(-100%);
+  display: block;
 }
 
 .advantages__icon3::before {
@@ -898,18 +908,21 @@ textarea {
   background-image: url(../images/advantages-icon3.png);
   background-repeat: no-repeat;
   background-size: contain;
-  position: absolute;
-  top: -40px;
-  left: 0;
-  transform: translateY(-100%);
+  display: block;
 }
 
 .advantages__text {
   font-weight: 700;
-  font-size: 16px;
-  line-height: 1.75;
+  font-size: 12px;
+  line-height: 1.6666666667;
   letter-spacing: 0.02em;
   color: var(--secondary-accent-text);
+}
+@media screen and (min-width: 768px) {
+  .advantages__text {
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
 }
 
 .gallery {
