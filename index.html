@@ -205,10 +205,22 @@
 
         <!-- Gallery -->
 
-        <!-- <section class="gallery section">
+        <section class="gallery section">
             <div class="container">
                 <h2 class="gallery__title visually-hidden">Gallery</h2>
-                <img src="./images/gallery.jpg" class="gallery-img" alt="Gallery photo" width="1280" height="430">
+                <picture>
+                    <source srcset="./images/gallery-desk-1x.png 1x, ./images/gallery-desk-2x.png 2x,"
+                        media="(min-width: 1280px)">
+
+                    <source srcset="./images/gallery-tab-1x.png 1x, ./images/gallery-tab-2x.png 2x,"
+                        media="(min-width: 768px)">
+
+                    <source srcset="./images/gallery-mob-1x.png 1x, ./images/gallery-mob-2x.png 2x,"
+                        media="(min-width: 320px)">
+
+                    <img src="./images/gallery.jpg" class="gallery-img" alt="Gallery photo">
+                </picture>
+
             </div>
         </section> -->
 
@@ -224,7 +236,7 @@
                     congue. Lorem ipsum primis in nibh vel risus.</p>
                 <p class="reviews__client">Emily, Los Angeles</p>
             </div>
-        </Section> -->
+        </Section>
 
         <!-- Contact -->
 
